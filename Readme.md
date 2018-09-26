@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Татьяна Бурмина](https://up.htmlacademy.ru/adaptive/15/user/683015).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Катышева](https://up.htmlacademy.ru/adaptive/15/user/262423).
 
 ---
 
