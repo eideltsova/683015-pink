@@ -8,26 +8,24 @@
 <body>
 
   <header class="page-header page-header--form">
-    <h1 class="visually-hidden">Конкурс от приложения</h1>
     <div class="page-header__wrap">
-      <a class="logo header--logo" href="index.html">
-        <img class="logo__img" src="src=http://placehold.it/150x100" alt="Логотип Пинк">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-img" src="src=http://placehold.it/150x100" alt="Логотип Пинк">
       </a>
-      <nav class="page-header-nav page-header-nav--close">
-        <h2 class="visually-hidden">Главное меню</h2>
-        <button class="page-header-nav__switch" type="button"></button>
-        <div class="page-header-nav__wrap">
-          <ul class="page-header-nav__list">
-            <li class="page-header-nav__item">
+      <nav class="main-nav main-nav--close">
+        <button class="main-nav__switch" type="button"></button>
+        <div class="main-nav__wrap">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="page-header-nav__item">
+            <li class="main-nav__item">
               <a href="photo.html">Фотографии</a>
             </li>
-            <li class="page-header-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a>Конкурс</a>
             </li>
-            <li class="page-header-nav__item">
+            <li class="main-nav__item">
               <a href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
@@ -47,18 +45,18 @@
         </div>
         <form class="form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="form-field form-field--name">
-            <ul class="form-field__list form-field__list--name">
-              <li class="form-field__item form-field__item--name">
-                <label class="form-field__lable form-field__lable--name" for="surname">Фамилия:</label>
-                <input class="form-field__input form-field__input--name" type="text" name="surname" id="surname" placeholder="Укажите фамилию *"/>
+            <ul class="form-field__list">
+              <li class="form-field__item">
+                <label class="form-field__label" for="surname">Фамилия:</label>
+                <input class="form-field__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *"/>
               </li>
-              <li class="form-field__item form-field__item--name">
-                <label class="form-field__lable form-field__lable--name" for="name">Имя:</label>
-                <input class="form-field__input form-field__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя *"/>
+              <li class="form-field__item">
+                <label class="form-field__label" for="name">Имя:</label>
+                <input class="form-field__input" type="text" name="name" id="name" placeholder="Введите ваше имя *"/>
               </li>
-              <li class="form-field__item form-field__item--name">
-                <label class="form-field__lable form-field__lable--name" for="patronymic">Отчество:</label>
-                <input class="form-field__input form-field__input--name" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже"/>
+              <li class="form-field__item">
+                <label class="form-field__label" for="patronymic">Отчество:</label>
+                <input class="form-field__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже"/>
               </li>
             </ul>
           </fieldset>
@@ -66,29 +64,29 @@
           <fieldset class="form-field form-field--achievements">
             <legend class="form-field__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="form-field__list-checkbox">
-              <li class="form-field__item-checkbox">
-                <input class="form-field__input-checkbox" type="checkbox" id="achievements-1" name="achievements" value="Сделал селфи с акулой" checked>
-                <label class="form-field__lable-checkbox" for="achievements-1">Сделал селфи с акулой</label>
+              <li class="item-checkbox">
+                <input class="item-checkbox__input" type="checkbox" id="achievements-1" name="achievements" value="Сделал селфи с акулой" checked>
+                <label class="item-checkbox__label" for="achievements-1">Сделал селфи с акулой</label>
               </li>
-              <li class="form-field__item-checkbox">
-                <input class="form-field__input-checkbox" type="checkbox" id="achievements-2" name="achievements" value="Обгорел на пляже" checked>
-                <label class="form-field__lable-checkbox" for="achievements-2">Обгорел на пляже</label>
+              <li class="item-checkbox">
+                <input class="item-checkbox__input" type="checkbox" id="achievements-2" name="achievements" value="Обгорел на пляже" checked>
+                <label class="item-checkbox__label" for="achievements-2">Обгорел на пляже</label>
               </li>
-              <li class="form-field__item-checkbox">
-                <input class="form-field__input-checkbox" type="checkbox" id="achievements-3" name="achievements" value="Видел Чака Норриса">
-                <label class="form-field__lable-checkbox" for="achievements-3">Видел Чака Норриса</label>
+              <li class="item-checkbox">
+                <input class="item-checkbox__input" type="checkbox" id="achievements-3" name="achievements" value="Видел Чака Норриса">
+                <label class="item-checkbox__label" for="achievements-3">Видел Чака Норриса</label>
               </li>
-              <li class="form-field__item-checkbox">
-                <input class="form-field__input-checkbox" type="checkbox" id="achievements-4" name="achievements" value="Накупил сувениров">
-                <label class="form-field__lable-checkbox" for="achievements-4">Накупил сувениров</label>
+              <li class="item-checkbox">
+                <input class="item-checkbox__input" type="checkbox" id="achievements-4" name="achievements" value="Накупил сувениров">
+                <label class="item-checkbox__label" for="achievements-4">Накупил сувениров</label>
               </li>
-              <li class="form-field__item-checkbox">
-                <input class="form-field__input-checkbox" type="checkbox" id="achievements-5" name="achievements" value="Удержал башню" checked>
-                <label class="form-field__lable-checkbox" for="achievements-5">Удержал башню</label>
+              <li class="item-checkbox">
+                <input class="item-checkbox__input" type="checkbox" id="achievements-5" name="achievements" value="Удержал башню" checked>
+                <label class="item-checkbox__label" for="achievements-5">Удержал башню</label>
               </li>
-              <li class="form-field__item-checkbox">
-                <input class="form-field__input-checkbox" type="checkbox" id="achievements-6" name="achievements" value="Разгромил отель">
-                <label class="form-field__lable-checkbox" for="achievements-6">Разгромил отель</label>
+              <li class="item-checkbox">
+                <input class="item-checkbox__input" type="checkbox" id="achievements-6" name="achievements" value="Разгромил отель">
+                <label class="item-checkbox__label" for="achievements-6">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
@@ -97,11 +95,11 @@
             <legend class="form-field__title visually-hidden">Контакты</legend>
             <ul class="form-field__list form-field__list--contacts">
               <li class="form-field__item form-field__item--contacts">
-                <label class="form-field__lable form-field__lable--contacts" for="phone">Номер телефона</label>
+                <label class="form-field__label form-field__label--contacts" for="phone">Номер телефона</label>
                 <input class="form-field__input form-field__input--contacts" type="text" name="phone" id="phone" placeholder="Номер телефона">
               </li>
               <li class="form-field__item form-field__item--contacts">
-                <label class="form-field__lable form-field__lable--contacts" for="email">Адрес почты</label>
+                <label class="form-field__label form-field__label--contacts" for="email">Адрес почты</label>
                 <input class="form-field__input form-field__input--contacts" type="text" name="email" id="email" placeholder="Введите почту *">
               </li>
             </ul>
@@ -112,15 +110,15 @@
             <ul class="form-field__list-checkbox form-field__list-checkbox--apps">
               <li class="form-field__item-checkbox">
                 <input class="form-field__input-checkbox" type="checkbox" id="app-1" name="apps" value="Pink для iOS" checked>
-                <label class="form-field__lable-checkbox" for="app-1">Pink для iOS</label>
+                <label class="form-field__label-checkbox" for="app-1">Pink для iOS</label>
               </li>
               <li class="form-field__item-checkbox">
                 <input class="form-field__input-checkbox" type="checkbox" id="app-2" name="apps" value="Pink на Android">
-                <label class="form-field__lable-checkbox" for="app-2">Pink на Android</label>
+                <label class="form-field__label-checkbox" for="app-2">Pink на Android</label>
               </li>
               <li class="form-field__item-checkbox">
                 <input class="form-field__input-checkbox" type="checkbox" id="app-3" name="apps" value="Windows Phone">
-                <label class="form-field__lable-checkbox" for="app-3">Windows Phone</label>
+                <label class="form-field__label-checkbox" for="app-3">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
@@ -131,7 +129,7 @@
           </fieldset>
 
           <div class="form-field__button-wrap">
-            <button class="form-field__button square-button" type="submit" value="Отправить форму">Отправить форму</button>
+            <button class="form-field__button square-button" type="submit">Отправить форму</button>
             <p class="form-field__notice"><span class="form-field__notice-symbol"> * </span>— Обязательные поля</p>
           </div>
         </form>
@@ -157,7 +155,7 @@
       </div>
     </div>
   </footer>
-  <div class="popup popup--error" style="display: none">
+  <div class="popup popup--error">
     <div class="popup__content-wrap">
       <div class="popup__title">Что-то пошло не так!</div>
       <div class="popup__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
@@ -166,7 +164,7 @@
       <button class="popup__button square-button  button--popup" type="button">Ок</button>
     </div>
   </div>
-  <div class="popup popup--correctly" style="display: none">
+  <div class="popup popup--correctly">
     <div class="popup__content-wrap">
       <div class="popup__title">Ваша заявка отправлена</div>
       <div class="popup__content">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</div>

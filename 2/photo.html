@@ -10,24 +10,23 @@
 
   <header class="page-header page-header--photo">
     <div class="page-header__wrap">
-      <a class="logo header--logo" href="index.html">
-        <img class="logo__img" src="src=http://placehold.it/150x100" alt="Логотип Пинк">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-img" src="src=http://placehold.it/150x100" alt="Логотип Пинк">
       </a>
-      <nav class="page-header-nav page-header-nav--close">
-        <h2 class="visually-hidden">Главное меню</h2>
-        <button class="page-header-nav__switch" type="button"></button>
-        <div class="page-header-nav__wrap">
-          <ul class="page-header-nav__list">
-            <li class="page-header-nav__item">
+      <nav class="main-nav main-nav--close">
+        <button class="main-nav__switch" type="button"></button>
+        <div class="main-nav__wrap">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="page-header-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a>Фотографии</a>
             </li>
-            <li class="page-header-nav__item">
+            <li class="main-nav__item">
               <a href="form.html">Конкурс</a>
             </li>
-            <li class="page-header-nav__item">
+            <li class="main-nav__item">
               <a href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
@@ -41,7 +40,6 @@
 
   <main class="page-main page-main--photo">
     <section class="photogallery">
-      <h2 class="visually-hidden">Фотогалерея</h2>
       <div class="photogallery__title">
         <p class="photogallery__title-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
@@ -69,7 +67,7 @@
 
       <div class="publication-list">
 
-        <article class="publication publication-item">
+        <article class="publication">
           <a class="publication__photo" href="#">
             <img src="http://placehold.it/150x100" alt="Фото Левона">
           </a>
@@ -90,7 +88,7 @@
           </div>
         </article>
 
-        <article class="publication publication-item">
+        <article class="publication">
           <a class="publication__photo" href="#">
             <img src="http://placehold.it/150x100" alt="Фото Антона">
           </a>
@@ -111,7 +109,7 @@
           </div>
         </article>
 
-        <article class="publication publication-item">
+        <article class="publication">
           <a class="publication__photo" href="#">
             <img src="http://placehold.it/150x100" alt="Фото Бориса">
           </a>
@@ -132,7 +130,7 @@
           </div>
         </article>
 
-        <article class="publication publication-item">
+        <article class="publication">
           <a class="publication__photo" href="#">
             <img src="http://placehold.it/150x100" alt="Фото Сергея">
           </a>
@@ -153,7 +151,7 @@
           </div>
         </article>
 
-        <article class="publication publication-item">
+        <article class="publication">
           <a class="publication__photo" href="#">
             <img src="http://placehold.it/150x100" alt="Фото Максима">
           </a>
@@ -174,7 +172,7 @@
           </div>
         </article>
 
-        <article class="publication publication-item">
+        <article class="publication">
           <a class="publication__photo" href="#">
             <img src="http://placehold.it/150x100" alt="Фото Надежды">
           </a>
@@ -203,13 +201,13 @@
         </div>
         <form class="publication-editor__form" method="get" action="https://echo.htmlacademy.ru">
           <img class="publication-editor__example" src="http://placehold.it/150x100" alt="Пример фотографии">
-          <ul class="publication-editor__list">
-            <li class="publication-editor__item"><a href="#"><span class="visually-hidden">Обрезать фотографию</span></a></li>
-            <li class="publication-editor__item"><a href="#"><span class="visually-hidden">Яркость фотографии</span></a></li>
-            <li class="publication-editor__item"><a href="#"><span class="visually-hidden">Контрасность фотографии</span></a></li>
-          </ul>
+          <div class="publication-editor__list">
+            <button class="publication-editor__button publication-editor__button--crop" type="button">Обрезать фотографию</button>
+            <button class="publication-editor__button publication-editor__button--fill" type="button">Яркость фотографии</button>
+            <button class="publication-editor__button publication-editor__button--contrast" type="button">Контрасность фотографии</button>
+          </div>
           <div class="publication-editor__control"></div>
-          <div class="ppublication-editor__buttons">
+          <div class="publication-editor__buttons">
             <button class="publication-editor__upload-button  button-round" type="submit">Запостить</button>
             <button class="publication-editor__cancel-button button-round" type="reset">Отмена</button>
           </div>
