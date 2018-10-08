@@ -200,13 +200,13 @@
         </div>
         <form class="publication-editor__form" method="get" action="https://echo.htmlacademy.ru">
           <img class="publication-editor__example" src="http://placehold.it/150x100" alt="Пример фотографии">
-          <ul class="publication-editor__list">
-            <li class="publication-editor__item"><a href="#"><span class="visually-hidden">Обрезать фотографию</span></a></li>
-            <li class="publication-editor__item"><a href="#"><span class="visually-hidden">Яркость фотографии</span></a></li>
-            <li class="publication-editor__item"><a href="#"><span class="visually-hidden">Контрасность фотографии</span></a></li>
-          </ul>
+          <div class="publication-editor__list">
+            <button class="publication-editor__button publication-editor__button--crop" type="button">Обрезать фотографию</button>
+            <button class="publication-editor__button publication-editor__button--fill" type="button">Яркость фотографии</button>
+            <button class="publication-editor__button publication-editor__button--contrast" type="button">Контрасность фотографии</button>
+          </div>
           <div class="publication-editor__control"></div>
-          <div class="ppublication-editor__buttons">
+          <div class="publication-editor__buttons">
             <button class="publication-editor__upload-button  button-round" type="submit">Запостить</button>
             <button class="publication-editor__cancel-button button-round" type="reset">Отмена</button>
           </div>
