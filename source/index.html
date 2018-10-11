@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,23 +12,25 @@
       <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
       <div class="page-header__wrap">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-img" src="src=http://placehold.it/150x100" alt="Логотип Пинк">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
         </a>
         <nav class="main-nav main-nav--close">
-          <button class="main-nav__switch" type="button"></button>
+          <button class="main-nav__switch" type="button">
+            <img src="img/icon-menu-cross.svg" alt="Close menu">
+          </button>
           <div class="main-nav__wrap">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a>Главная</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="photo.html">Фотографии</a>
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
               </li>
               <li class="main-nav__item">
-                <a href="form.html">Конкурс</a>
+                <a class="main-nav__link" href="form.html">Конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">HTML Academy</a>
+                <a class="main-nav__link" href="#">HTML Academy</a>
               </li>
             </ul>
           </div>

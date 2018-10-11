@@ -1,1 +1,7 @@
-body { background: green; }
+@import "normalize";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "general.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss"

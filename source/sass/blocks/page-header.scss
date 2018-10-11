@@ -1,0 +1,16 @@
+.page-header {
+  position: relative;
+  min-width: $mobile-width;
+  background-color: $dark-blue;
+  background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
+}
+
+.page-header__wrap {
+  min-width: 238px;
+  margin: auto;
+}
+
+.page-header__logo-img {
+  width: 75px;
+  height: 22px;
+}
