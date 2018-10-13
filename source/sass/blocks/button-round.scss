@@ -1,0 +1,58 @@
+.button-round {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.button-round--white {
+  color: $white;
+  border: 3px solid $white;
+
+  &:hover {
+  background-color: $white;
+  color: $pink;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $pink-opacity;
+  }
+}
+
+.button-round--pink {
+  color: $pink;
+  border: 3px solid $pink;
+
+  &:hover {
+  background-color: $pink;
+  color: $white;
+  }
+
+  &:active {
+  background-color: $pink;
+  color: $white-opacity;
+  }
+}
+
+.button-round--grey {
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  background-color: transparent;
+
+  &:hover {
+  color: $dark-blue-opacity;
+  border: 3px solid $dark-blue-opacity;
+  }
+
+  &:active {
+  color: $white-opacity;
+  border: 3px solid $dark-blue-opacity;
+  background-color: $dark-blue-opacity;
+  }
+}

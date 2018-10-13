@@ -1,0 +1,31 @@
+.downloads {
+  padding: 30px 20px;
+  min-height: 270px;
+  margin: auto;
+  background-color: $dark-blue;
+}
+
+.downloads__list {
+  @include list-reset;
+}
+
+.downloads__item {
+  display: inline-block;
+  width: 47px;
+  height: 56px;
+}
+.downloads__item-apple {
+  background: url('../img/logo-apple.svg') no-repeat 100% 100%;
+}
+.downloads__item-android {
+  background: url('../img/logo-android.svg') no-repeat 100% 100%;
+}
+.downloads__item-microsoft {
+  background: url('../img/logo-microsoft.svg') no-repeat 100% 100%;
+}
+
+.downloads__describing {
+  color: $white;
+  font-weight: 300;
+  padding: 0 20px;
+}

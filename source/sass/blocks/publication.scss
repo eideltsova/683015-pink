@@ -1,0 +1,54 @@
+.publication {
+  margin-bottom: 20px;
+}
+
+.publication__photo-category {
+  display: block;
+  width: 140px;
+  height:36px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: $white;
+  padding-top: 5px;
+  background-color: $pink;
+}
+
+.publication__wrap--panorama {
+  padding: 0 20px;
+}
+
+.publication__content {
+  padding: 0 15px 25px 15px;
+  background-color: $light-grey;
+}
+
+.publication__content--panorama {
+  padding: 0 20px 25px;
+}
+
+.publication__author {
+  font-weight: 700;
+}
+
+.publication__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.publication__text {
+  @include indentation-reset;
+  margin-bottom: 15px;
+
+}
+
+.publication__active-likes {
+  color: $pink;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.publication-list {
+  padding: 0 20px;
+}
