@@ -15,8 +15,8 @@
   border: 3px solid $white;
 
   &:hover {
-  background-color: $white;
-  color: $pink;
+    background-color: $white;
+    color: $pink;
   }
 
   &:active {
@@ -30,13 +30,13 @@
   border: 3px solid $pink;
 
   &:hover {
-  background-color: $pink;
-  color: $white;
+    background-color: $pink;
+    color: $white;
   }
 
   &:active {
-  background-color: $pink;
-  color: $white-opacity;
+    background-color: $pink;
+    color: $white-opacity;
   }
 }
 
@@ -46,13 +46,13 @@
   background-color: transparent;
 
   &:hover {
-  color: $dark-blue-opacity;
-  border-color: $dark-blue-opacity;
+    color: $dark-blue-opacity;
+    border-color: $dark-blue-opacity;
   }
 
   &:active {
-  color: $white-opacity;
-  border-color: $dark-grey;
-  background-color: $dark-grey;
+    color: $white-opacity;
+    border-color: $dark-grey;
+    background-color: $dark-grey;
   }
 }
