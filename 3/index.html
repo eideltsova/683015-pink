@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/683015-pink/3/">
+</head>
+  <body>
+
+    <header class="page-header page-header--index">
+      <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
+      <div class="page-header__wrap">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+        </a>
+        <nav class="main-nav main-nav--close">
+          <button class="main-nav__switch" type="button">
+            <img src="img/icon-menu-cross.svg" alt="Close menu">
+          </button>
+          <div class="main-nav__wrap">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-header__content">
+          <div class="downloads">
+            <a class="button-round button-round--white" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+            <ul class="downloads__list">
+              <li class="downloads__item downloads__item-apple"><a href="https://www.apple.com/ru/itunes/"><span class="visually-hidden">itunes</span></a></li>
+              <li class="downloads__item downloads__item-android"><a href="https://play.google.com/store"><span class="visually-hidden">android</span></a></li>
+              <li class="downloads__item downloads__item-microsoft"><a href="https://www.microsoft.com/store/"><span class="visually-hidden">microsoft</span></a></li>
+            </ul>
+            <p class="downloads__describing">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main page-main--index">
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества приложения</h2>
+        <div class="advantages__wrap">
+          <h2 class="advantages__title">Устали от серости мегаполиса?</h2>
+          <h2 class="advantages__title">Нам есть, что вам  предложить!</h2>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Поднимает настроение</h3>
+            <p class="advantages__item-describing">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+            <p class="advantages__item-describing">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item advantages__item--friends">
+            <h3 class="advantages__item-title">Заводит новых друзей</h3>
+            <p class="advantages__item-describing">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых друзей</p>
+            <img class="advantages__item-img" src="img/iphone-screen-3-desktop@1x.png" alt="Смартфон со смайликом на экране">
+          </li>
+        </ul>
+      </section>
+      <section class="comments">
+        <h2 class="visually-hidden">Отзывы пользователей о приложении</h2>
+        <div class="comments__wrap">
+          <div class="comments__list slider">
+            <input class="slider__radio slider__radio--active" name="radio-toggle" id="radio-1" type="radio" checked>
+            <input class="slider__radio" name="radio-toggle" id="radio-2" type="radio">
+            <input class="slider__radio" name="radio-toggle" id="radio-3" type="radio">
+            <blockquote class="comments__item">
+              <cite class="comments__title">Николай Петров</cite>
+              <p class="comments__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+            <blockquote class="comments__item">
+              <cite class="comments__title">Николай Петров</cite>
+              <p class="comments__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </blockquote>
+            <blockquote class="comments__item">
+              <cite class="comments__title">Николай Петров</cite>
+              <p class="comments__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </blockquote>
+            <div class="comments__slider slider">
+              <label class="slider__radio-definition" for="radio-1">1</label>
+              <label class="slider__radio-definition" for="radio-2">2</label>
+              <label class="slider__radio-definition" for="radio-3">3</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tariffs">
+        <h2 class="visually-hidden">Тарифы использования приложения</h2>
+        <div class="tariffs__wrap">
+          <input class="slider-radio" name="radio-toggle" id="tariff-1" type="radio">
+          <input class="slider-radio slider-radio--active" name="radio-toggle" id="tariff-2" type="radio" checked>
+          <input class="slider-radio" name="radio-toggle" id="tariff-3" type="radio">
+          <div class="tariffs__table-wrap">
+            <table class="tariffs-table">
+              <tr class="tariffs-table__header">
+                <th class="tariffs-table__title">Стандарт</th>
+                <th class="tariffs-table__price">3,99 usd</th>
+              </tr>
+              <tr class="tariffs-table__row">
+                <td class="tariffs-table__date">Розовый фильтр</td>
+                <td class="tariffs-table__date"><img src="img/icon-yes.svg" alt="Есть"></td>
+              </tr>
+              <tr class="tariffs-table__row">
+                <td class="tariffs-table__date">Смайлики</td>
+                <td class="tariffs-table__date"><img src="img/icon-yes.svg" alt="Есть"></td>
+              </tr>
+              <tr class="tariffs-table__row">
+                <td class="tariffs-table__date">Комментарии</td>
+                <td class="tariffs-table__date"><img src="img/icon-no.svg" alt="Нет"></td>
+              </tr>
+            </table>
+            <div class="tatiffs__slider slider">
+              <label class="slider__definition" for="tariff-1">1</label>
+              <label class="slider__definition" for="tariff-2">2</label>
+              <label class="slider__definition" for="tariff-3">3</label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer page-footer--index">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="page-footer__wrap"></div>
+        <section class="contacts">
+          <div class="contacts__contacts-header">
+            <p class="contacts__title">Остались вопросы?</p>
+            <span class="contacts__subtitle">Свяжитесь с нами!</span>
+          </div>
+          <div class="contacts__list">
+            <div class="contacts__item contacts__item--phone">
+              <h3 class="contacts__item-title">Звоните:</h3>
+              <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__item contacts__item--mail">
+              <h3 class="contacts__item-title">Пишите:</h3>
+              <a class="contacts__item-info" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__item contacts__item--address">
+              <h3 class="contacts__item-title">Приезжайте в гости:</h3>
+              <a class="contacts__item-info">ул. Большая Конюшенная, 19/8</a>
+            </div>
+          </div>
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Карта">
+      </section>
+    </footer>
+
+  </body>
+</html>
