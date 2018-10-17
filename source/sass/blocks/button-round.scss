@@ -47,12 +47,12 @@
 
   &:hover {
   color: $dark-blue-opacity;
-  border: 3px solid $dark-blue-opacity;
+  border-color: $dark-blue-opacity;
   }
 
   &:active {
   color: $white-opacity;
-  border: 3px solid $dark-blue-opacity;
-  background-color: $dark-blue-opacity;
+  border-color: $dark-grey;
+  background-color: $dark-grey;
   }
 }

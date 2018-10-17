@@ -1,0 +1,72 @@
+.form-field {
+  @include indentation-reset;
+  border: none;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.form-field__list {
+  @include list-reset;
+
+}
+
+.form-field__item {
+  margin-bottom: 25px;
+}
+
+.form-field--achievements {
+  background-color: $light-grey;
+  padding: 0 20px;
+}
+
+.form-field__title-wrap {
+  margin: 40px 0;
+}
+
+.form-field__title {
+  padding: 0 25px;
+  line-height: 18px;
+  color: $pink;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-field--apps {
+  background-color: $light-grey;
+}
+
+.form-field__textarea {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid $grey;
+
+  &:-ms-input-placeholder {
+    color: $dark-blue;
+  }
+
+  &::-moz-placeholder {
+    color: $dark-blue;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $dark-blue;
+  }
+}
+
+.form-field__button-notice {
+  @include indentation-reset;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.form-field__button-symbol {
+  color: $pink;
+}
+
+.form-field__button {
+  margin-bottom: 40px;
+}
