@@ -1,0 +1,41 @@
+.contacts__contacts-header {
+  margin-bottom: 40px;
+}
+
+.contacts__title,
+.contacts__subtitle {
+  @include indentation-reset;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.contacts__item {
+  margin-bottom: 25px;
+  padding: 0 25px;
+}
+
+.contacts__item-title {
+  @include indentation-reset;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts__item-info {
+  font-size: 24px;
+  font-weight: 300;
+  color: $pink;
+  margin-bottom: 25px;
+
+  &:hover,
+  &:focus {
+    color: $dark-blue;
+  }
+
+  &:active {
+    color: $dark-blue-opacity;
+  }
+}
+
+.contacts__map {
+  min-height: 200px;
+}

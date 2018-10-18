@@ -1,0 +1,30 @@
+.popup {
+  background-color: $white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+}
+
+.popup--correctly {
+  padding: 40px 0;
+}
+
+.popup__title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+}
+
+.popup__content {
+  margin-bottom: 40px;
+}
+
+.popup__content--correctly {
+  padding: 0 30px;
+}
+
+.popup__button-wrap--correctly {
+  padding: 50px 20px;
+  background-color: $grey;
+}

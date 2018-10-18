@@ -1,0 +1,34 @@
+.main-nav {
+  color: $white;
+  width: 100%;
+  background-color: $dark-blue;
+}
+
+.main-nav__list {
+  @include list-reset;
+  text-align: center;
+}
+
+.main-nav__item {
+  border-top: 1px solid $white-opacity;
+  border-bottom: 1px solid $black;
+  min-width: $mobile-width;
+  height: 63px;
+  padding: 10px 0;
+
+  .main-nav__link {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+  }
+
+  .main-nav__link--active {
+    color: $white-opacity;
+  }
+}

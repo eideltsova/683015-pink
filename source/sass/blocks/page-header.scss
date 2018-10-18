@@ -1,0 +1,40 @@
+.page-header {
+  position: relative;
+  min-width: $mobile-width;
+  min-height: 462px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 10% 100%, url("../img/bg-back-mobile@1x.jpg") no-repeat 100% 100%;
+  background-color: $dark-blue;
+}
+
+.page-header__wrap {
+  min-width: 238px;
+  margin: auto;
+}
+
+.page-header__logo-img {
+  width: 75px;
+  height: 22px;
+}
+
+.page-header__content {
+  min-width: 280px;
+  margin: auto;
+}
+
+/*photo*/
+
+.page-header__title {
+  min-width: 280px;
+  margin: auto;
+}
+
+.page-header__title-text {
+  min-height: 238px;
+  padding: 80px 45px;
+  margin: 0;
+  color: $white;
+  text-align: center;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 300;
+}

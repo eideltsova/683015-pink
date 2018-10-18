@@ -1,0 +1,11 @@
+.photogallery__title {
+  padding: 50px 20px 0 20px;
+}
+
+.photogallery__title-text {
+  @include indentation-reset;
+  padding: 0 15px;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 30px;
+}

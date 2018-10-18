@@ -1,0 +1,10 @@
+.competition-form__title-text {
+  @include indentation-reset;
+  margin: 55px 0 45px 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.competition-form__title {
+  padding: 0 20px;
+}

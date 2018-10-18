@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -10,23 +12,25 @@
       <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
       <div class="page-header__wrap">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-img" src="src=http://placehold.it/150x100" alt="Логотип Пинк">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
         </a>
         <nav class="main-nav main-nav--close">
-          <button class="main-nav__switch" type="button"></button>
+          <button class="main-nav__switch" type="button">
+            <img src="img/icon-menu-cross.svg" alt="Close menu">
+          </button>
           <div class="main-nav__wrap">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a>Главная</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="photo.html">Фотографии</a>
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
               </li>
               <li class="main-nav__item">
-                <a href="form.html">Конкурс</a>
+                <a class="main-nav__link" href="form.html">Конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">HTML Academy</a>
+                <a class="main-nav__link" href="#">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -35,9 +39,9 @@
           <div class="downloads">
             <a class="button-round button-round--white" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
             <ul class="downloads__list">
-              <li class="downloads__item"><a class="apple-logo" href="https://www.apple.com/ru/itunes/"><span class="visually-hidden">itunes</span></a></li>
-              <li class="downloads__item"><a class="android-logo" href="https://play.google.com/store"><span class="visually-hidden">android</span></a></li>
-              <li class="downloads__item"><a class="microsoft-logo" href="https://www.microsoft.com/store/"><span class="visually-hidden">microsoft</span></a></li>
+              <li class="downloads__item downloads__item-apple"><a href="https://www.apple.com/ru/itunes/"><span class="visually-hidden">itunes</span></a></li>
+              <li class="downloads__item downloads__item-android"><a href="https://play.google.com/store"><span class="visually-hidden">android</span></a></li>
+              <li class="downloads__item downloads__item-microsoft"><a href="https://www.microsoft.com/store/"><span class="visually-hidden">microsoft</span></a></li>
             </ul>
             <p class="downloads__describing">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
@@ -64,7 +68,7 @@
           <li class="advantages__item advantages__item--friends">
             <h3 class="advantages__item-title">Заводит новых друзей</h3>
             <p class="advantages__item-describing">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых друзей</p>
-            <img class="advantages__item-img" src="http://placehold.it/150x100" alt="Смартфон со смайликом на экране">
+            <img class="advantages__item-img" src="img/iphone-screen-3-desktop@1x.png" alt="Смартфон со смайликом на экране">
           </li>
         </ul>
       </section>
@@ -109,15 +113,15 @@
               </tr>
               <tr class="tariffs-table__row">
                 <td class="tariffs-table__date">Розовый фильтр</td>
-                <td class="tariffs-table__date"><img src="#" alt="Есть"></td>
+                <td class="tariffs-table__date"><img src="img/icon-yes.svg" alt="Есть"></td>
               </tr>
               <tr class="tariffs-table__row">
                 <td class="tariffs-table__date">Смайлики</td>
-                <td class="tariffs-table__date"><img src="#" alt="Есть"></td>
+                <td class="tariffs-table__date"><img src="img/icon-yes.svg" alt="Есть"></td>
               </tr>
               <tr class="tariffs-table__row">
                 <td class="tariffs-table__date">Комментарии</td>
-                <td class="tariffs-table__date"><img src="#" alt="Нет"></td>
+                <td class="tariffs-table__date"><img src="img/icon-no.svg" alt="Нет"></td>
               </tr>
             </table>
             <div class="tatiffs__slider slider">
@@ -152,7 +156,7 @@
               <a class="contacts__item-info">ул. Большая Конюшенная, 19/8</a>
             </div>
           </div>
-          <img class="contacts__map" src="#" alt="Карта">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Карта">
       </section>
     </footer>
 

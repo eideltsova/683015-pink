@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк — Фотографии</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -10,23 +12,23 @@
   <header class="page-header page-header--photo">
     <div class="page-header__wrap">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="src=http://placehold.it/150x100" alt="Логотип Пинк">
+        <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
       </a>
       <nav class="main-nav main-nav--close">
         <button class="main-nav__switch" type="button"></button>
         <div class="main-nav__wrap">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>Фотографии</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
+              <a class="main-nav__link  main-nav__link--active">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -44,10 +46,10 @@
       </div>
       <article class="publication publication--panorama">
         <a class="publication__photo" href="#">
-          <img src="http://placehold.it/150x100" alt="Фото Анны">
+          <img src="img/panorama-mobile@1x.jpg" alt="Фото Анны">
           <span class="publication__photo-category">ПАНОРАМА ДНЯ</span>
         </a>
-        <div class="publication__wrap">
+        <div class="publication__wrap publication__wrap--panorama">
           <div class="publication__content publication__content--panorama">
             <div class="publication__titile publication__titile--panorama">
               <span class="publication__author">Анна</span>
@@ -68,7 +70,7 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="http://placehold.it/150x100" alt="Фото Левона">
+            <img src="img/photo-car-mobile@1x.jpg" alt="Фото Левона">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -89,7 +91,7 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="http://placehold.it/150x100" alt="Фото Антона">
+            <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото Антона">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -110,7 +112,7 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="http://placehold.it/150x100" alt="Фото Бориса">
+            <img src="img/photo-window-mobile@1x.jpg" alt="Фото Бориса">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -131,7 +133,7 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="http://placehold.it/150x100" alt="Фото Сергея">
+            <img src="img/photo-fair-mobile@1x.jpg" alt="Фото Сергея">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -152,7 +154,7 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="http://placehold.it/150x100" alt="Фото Максима">
+            <img src="img/photo-pov-mobile@1x.jpg" alt="Фото Максима">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -173,7 +175,7 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="http://placehold.it/150x100" alt="Фото Надежды">
+            <img src="img/photo-wing-mobile@1x.jpg" alt="Фото Надежды">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -196,10 +198,10 @@
       <div class="publication-editor">
         <div class="photogallery__title">
           <h2 class="visually-hidden">Редактор фотографий</h2>
-          <p class="photogallery__title-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="photogallery__title-text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <form class="publication-editor__form" method="get" action="https://echo.htmlacademy.ru">
-          <img class="publication-editor__example" src="http://placehold.it/150x100" alt="Пример фотографии">
+          <img class="publication-editor__example" src="img/photo-road-mobile@1x.jpg" alt="Пример фотографии">
           <div class="publication-editor__list">
             <button class="publication-editor__button publication-editor__button--crop" type="button">Обрезать фотографию</button>
             <button class="publication-editor__button publication-editor__button--fill" type="button">Яркость фотографии</button>
@@ -207,8 +209,8 @@
           </div>
           <div class="publication-editor__control"></div>
           <div class="publication-editor__buttons">
-            <button class="publication-editor__upload-button  button-round" type="submit">Запостить</button>
-            <button class="publication-editor__cancel-button button-round" type="reset">Отмена</button>
+            <button class="publication-editor__upload-button  button-round button-round--pink" type="submit">Запостить</button>
+            <button class="publication-editor__cancel-button button-round button-round--grey" type="reset">Отмена</button>
           </div>
         </form>
       </div>
@@ -218,7 +220,7 @@
   <footer class="page-footer page-footer--photo">
     <div class="page-footer__wrap">
       <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="page-footer__logo-img" src="src=http://placehold.it/150x100" alt="Логотип Пинк">
+        <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
       </a>
       <div class="social social--competition">
         <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
@@ -228,7 +230,7 @@
       <div class="copyright copyright--form">
         <span class="copyright__developed">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__img" src="http://placehold.it/150x100" alt="Логотип академии">
+          <img class="copyright__img" src="img/htmlacademy.svg" alt="Логотип академии">
         </a>
       </div>
     </div>

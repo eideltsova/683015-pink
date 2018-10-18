@@ -1,0 +1,24 @@
+.comments {
+  text-align: center;
+  padding: 45px 20px 0 20px;
+}
+
+.comments__item {
+  @include indentation-reset;
+}
+
+.comments__title {
+  @include indentation-reset;
+  margin-bottom: 25px;
+  font-style: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+}
+
+.comments__content {
+  @include indentation-reset;
+  margin-bottom: 35px;
+  line-height: 30px;
+}
