@@ -10,7 +10,8 @@
   text-transform: uppercase;
   background-color: $green;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $dark-green;
     border-color: $dark-green;
   }

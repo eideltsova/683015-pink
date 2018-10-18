@@ -22,7 +22,8 @@
     line-height: 32px;
     color: $white;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $pink;
     }
   }

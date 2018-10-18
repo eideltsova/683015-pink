@@ -26,7 +26,8 @@
   color: $pink;
   margin-bottom: 25px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $dark-blue;
   }
 
