@@ -8,51 +8,54 @@
   padding: 10px 0;
   border-radius: 25px;
   background-color: transparent;
-}
 
-.button-round--white {
-  color: $white;
-  border: 3px solid $white;
-
-  &:hover {
-    background-color: $white;
-    color: $pink;
-  }
-
-  &:active {
-    background-color: $white;
-    color: $pink-opacity;
-  }
-}
-
-.button-round--pink {
-  color: $pink;
-  border: 3px solid $pink;
-
-  &:hover {
-    background-color: $pink;
+  .button-round--white {
     color: $white;
+    border: 3px solid $white;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $pink;
+    }
+
+    &:active {
+      background-color: $white;
+      color: $pink-opacity;
+    }
   }
 
-  &:active {
-    background-color: $pink;
-    color: $white-opacity;
+  .button-round--pink {
+    color: $pink;
+    border: 3px solid $pink;
+
+    &:hover,
+    &:focus {
+      background-color: $pink;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $pink;
+      color: $white-opacity;
+    }
   }
-}
 
-.button-round--grey {
-  color: rgba(40, 54, 69, 0.1);
-  border: 3px solid rgba(40, 54, 69, 0.1);
-  background-color: transparent;
+  .button-round--grey {
+    color: rgba(40, 54, 69, 0.1);
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    background-color: transparent;
 
-  &:hover {
-    color: $dark-blue-opacity;
-    border-color: $dark-blue-opacity;
-  }
+    &:hover,
+    &:focus {
+      color: $dark-blue-opacity;
+      border-color: $dark-blue-opacity;
+    }
 
-  &:active {
-    color: $white-opacity;
-    border-color: $dark-grey;
-    background-color: $dark-grey;
+    &:active {
+      color: $white-opacity;
+      border-color: $dark-grey;
+      background-color: $dark-grey;
+    }
   }
 }
