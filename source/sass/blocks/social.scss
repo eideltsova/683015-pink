@@ -4,3 +4,9 @@
   height: 50px;
   outline: 2px solid red; /*временно*/
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 200px;
+  }
+}

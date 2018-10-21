@@ -1,0 +1,92 @@
+@media (min-width: $mobile-width) {
+  .effect {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    background-color: $white;
+    margin-bottom: 70px;
+  }
+
+  .effect__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .effect__description {
+    padding: 100px 0 60px;
+    width: 310px;
+    text-align: left;
+  }
+
+  .effect__time {
+    @include indentation-reset;
+    padding: 165px 0 90px 65px;
+    display: block;
+    width: 300px;
+    font-size: 96px;
+    line-height: 149.47px;
+    font-weight: 700;
+    color: $pink;
+  }
+
+  .effect__title {
+    @include indentation-reset;
+    padding-right: 140px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: $black;
+  }
+
+  .effect__text {
+    @include indentation-reset;
+    margin-bottom: 15px;
+  }
+
+  .effect__link {
+    color: $pink;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    background-color: $light-grey;
+  }
+
+  .effect__wrap {
+    width: 950px;
+  }
+
+  .effect__description {
+    width: 580px;
+  }
+
+  .effect__time {
+    padding-left: 90px;
+    padding-bottom: 140px;
+  }
+
+  .effect__title {
+    line-height: 30px;
+  }
+
+  .effect__text {
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 55px;
+    margin-bottom: 40px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
