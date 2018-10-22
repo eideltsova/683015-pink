@@ -11,28 +11,32 @@
 
   <header class="page-header page-header--photo">
     <div class="page-header__wrap">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-      </a>
-      <nav class="main-nav main-nav--close">
-        <button class="main-nav__switch" type="button"></button>
-        <div class="main-nav__wrap">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link  main-nav__link--active">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__menu-wrap">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+        </a>
+        <nav class="main-nav main-nav--close">
+          <button class="main-nav__switch" type="button">
+            <img src="img/icon-menu-cross.svg" alt="Close menu">
+           </button>
+          <div class="main-nav__wrap">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  main-nav__link--active">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <div class="page-header__title">
         <h1 class="page-header__title-text">Фотографии пользователей</h1>
       </div>
@@ -45,20 +49,20 @@
         <p class="photogallery__title-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <article class="publication publication--panorama">
-        <a class="publication__photo" href="#">
-          <img src="img/panorama-mobile@1x.jpg" alt="Фото Анны">
+        <a class="publication__photo publication__photo--panorama" href="#">
+          <img class="publication__photo-img" src="img/panorama-mobile@1x.jpg" alt="Фото Анны">
           <span class="publication__photo-category">ПАНОРАМА ДНЯ</span>
         </a>
         <div class="publication__wrap publication__wrap--panorama">
           <div class="publication__content publication__content--panorama">
-            <div class="publication__titile publication__titile--panorama">
+            <div class="publication__title publication__title--panorama">
               <span class="publication__author">Анна</span>
               <span class="publication__time">(5 минут назад)</span>
             </div>
-            <div class="publication__text-wrap">
+            <div class="publication__text-wrap publication__text-wrap--panorama">
               <p class="publication__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             </div>
-            <div class="publication__active">
+            <div class="publication__active publication__active--panorama">
               <button class="publication__button button-like" type="button">Like</button>
               <span class="publication__active-likes">Нравится: 215</span>
             </div>
@@ -70,16 +74,18 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="img/photo-car-mobile@1x.jpg" alt="Фото Левона">
+            <img class="publication__photo-img" src="img/photo-car-mobile@1x.jpg" alt="Фото Левона">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
-              <div class="publication__titile publication__titile--item">
-                <span class="publication__author">Левон</span>
-                <span class="publication__time">(5 часов назад)</span>
-              </div>
-              <div class="publication__text-wrap">
-                <p class="publication__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="publication__content-wrap">
+                <div class="publication__title publication__title--item">
+                  <span class="publication__author">Левон</span>
+                  <span class="publication__time">(5 часов назад)</span>
+                </div>
+                <div class="publication__text-wrap">
+                  <p class="publication__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                </div>
               </div>
               <div class="publication__active">
                 <button class="publication__button button-like" type="button">Like</button>
@@ -91,16 +97,18 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото Антона">
+            <img class="publication__photo-img" src="img/photo-drumset-mobile@1x.jpg" alt="Фото Антона">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
-              <div class="publication__titile publication__titile--item">
-                <span class="publication__author">Антон</span>
-                <span class="publication__time">(12 часов назад)</span>
-              </div>
-              <div class="publication__text-wrap">
-                <p class="publication__text">Соседи будут рады!</p>
+              <div class="publication__content-wrap">
+                <div class="publication__title publication__title--item">
+                  <span class="publication__author">Антон</span>
+                  <span class="publication__time">(12 часов назад)</span>
+                </div>
+                <div class="publication__text-wrap">
+                  <p class="publication__text">Соседи будут рады!</p>
+                </div>
               </div>
               <div class="publication__active">
                 <button class="publication__button button-like" type="button">Like</button>
@@ -112,16 +120,18 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="img/photo-window-mobile@1x.jpg" alt="Фото Бориса">
+            <img class="publication__photo-img" src="img/photo-window-mobile@1x.jpg" alt="Фото Бориса">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
-              <div class="publication__titile publication__titile--item">
-                <span class="publication__author">Борис</span>
-                <span class="publication__time">(20 часов назад)</span>
-              </div>
-              <div class="publication__text-wrap">
-                <p class="publication__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="publication__content-wrap">
+                <div class="publication__title publication__title--item">
+                  <span class="publication__author">Борис</span>
+                  <span class="publication__time">(20 часов назад)</span>
+                </div>
+                <div class="publication__text-wrap">
+                  <p class="publication__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                </div>
               </div>
               <div class="publication__active">
                 <button class="publication__button button-like" type="button">Like</button>
@@ -133,16 +143,18 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="img/photo-fair-mobile@1x.jpg" alt="Фото Сергея">
+            <img class="publication__photo-img" src="img/photo-fair-mobile@1x.jpg" alt="Фото Сергея">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
-              <div class="publication__titile publication__titile--item">
-                <span class="publication__author">Сергей</span>
-                <span class="publication__time">(25 часов назад)</span>
-              </div>
-              <div class="publication__text-wrap">
-                <p class="publication__text">Самая кубанская в мире!</p>
+              <div class="publication__content-wrap">
+                <div class="publication__title publication__title--item">
+                  <span class="publication__author">Сергей</span>
+                  <span class="publication__time">(25 часов назад)</span>
+                </div>
+                <div class="publication__text-wrap">
+                  <p class="publication__text">Самая кубанская в мире!</p>
+                </div>
               </div>
               <div class="publication__active">
                 <button class="publication__button button-like" type="button">Like</button>
@@ -154,16 +166,18 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="img/photo-pov-mobile@1x.jpg" alt="Фото Максима">
+            <img class="publication__photo-img" src="img/photo-pov-mobile@1x.jpg" alt="Фото Максима">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
-              <div class="publication__titile publication__titile--item">
-                <span class="publication__author">Максим</span>
-                <span class="publication__time">(40 часов назад)</span>
-              </div>
-              <div class="publication__text-wrap">
-                <p class="publication__text">Где снег-то?</p>
+              <div class="publication__content-wrap">
+                <div class="publication__title publication__title--item">
+                  <span class="publication__author">Максим</span>
+                  <span class="publication__time">(40 часов назад)</span>
+                </div>
+                <div class="publication__text-wrap">
+                  <p class="publication__text">Где снег-то?</p>
+                </div>
               </div>
               <div class="publication__active">
                 <button class="publication__button button-like" type="button">Like</button>
@@ -175,16 +189,18 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img src="img/photo-wing-mobile@1x.jpg" alt="Фото Надежды">
+            <img class="publication__photo-img" src="img/photo-wing-mobile@1x.jpg" alt="Фото Надежды">
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
-              <div class="publication__titile publication__titile--item">
-                <span class="publication__author">Надежда</span>
-                <span class="publication__time">(45 часов назад)</span>
-              </div>
-              <div class="publication__text-wrap">
-                <p class="publication__text">Всем GM и взаимные лайки!</p>
+              <div class="publication__content-wrap">
+                <div class="publication__title publication__title--item">
+                  <span class="publication__author">Надежда</span>
+                  <span class="publication__time">(45 часов назад)</span>
+                </div>
+                <div class="publication__text-wrap">
+                  <p class="publication__text">Всем GM и взаимные лайки!</p>
+                </div>
               </div>
               <div class="publication__active">
                 <button class="publication__button button-like" type="button">Like</button>
@@ -201,16 +217,24 @@
           <p class="photogallery__title-text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <form class="publication-editor__form" method="get" action="https://echo.htmlacademy.ru">
-          <img class="publication-editor__example" src="img/photo-road-mobile@1x.jpg" alt="Пример фотографии">
-          <div class="publication-editor__list">
-            <button class="publication-editor__button publication-editor__button--crop" type="button">Обрезать фотографию</button>
-            <button class="publication-editor__button publication-editor__button--fill" type="button">Яркость фотографии</button>
-            <button class="publication-editor__button publication-editor__button--contrast" type="button">Контрасность фотографии</button>
-          </div>
-          <div class="publication-editor__control"></div>
-          <div class="publication-editor__buttons">
-            <button class="publication-editor__upload-button  button-round button-round--pink" type="submit">Запостить</button>
-            <button class="publication-editor__cancel-button button-round button-round--grey" type="reset">Отмена</button>
+          <div class="publication-editor__wrap">
+            <img class="publication-editor__example" src="img/photo-road-mobile@1x.jpg" alt="Пример фотографии">
+            <div class="publication-editor__tooling">
+              <div class="publication-editor__list">
+                <button class="publication-editor__button publication-editor__button--crop" type="button">Обрезать фотографию</button>
+                 <button class="publication-editor__button publication-editor__button--fill" type="button">Яркость фотографии</button>
+                <button class="publication-editor__button publication-editor__button--contrast" type="button">Контрасность фотографии</button>
+              </div>
+              <div class="publication-editor__control-wrap">
+                <div class="publication-editor__control"></div>
+                <div class="publication-editor__control"></div>
+                <div class="publication-editor__control"></div>
+              </div>
+              <div class="publication-editor__buttons">
+                <button class="publication-editor__upload-button  button-round button-round--pink" type="submit">Запостить</button>
+                <button class="publication-editor__cancel-button button-round button-round--grey" type="reset">Отмена</button>
+              </div>
+            </div>
           </div>
         </form>
       </div>

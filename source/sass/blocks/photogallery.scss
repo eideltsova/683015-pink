@@ -1,5 +1,12 @@
+.photogallery {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
 .photogallery__title {
-  padding: 50px 20px 0 20px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .photogallery__title-text {
@@ -8,4 +15,32 @@
   margin-bottom: 50px;
   text-align: center;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .photogallery {
+    padding-top: 100px;
+  }
+
+  .photogallery__title {
+    width: 620px;
+  }
+
+  .photogallery__title-text {
+    padding: 0 85px;
+    margin-bottom: 80px;
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .photogallery__title {
+    width: 960px;
+  }
+
+  .photogallery__title-text {
+    padding: 0 170px;
+    margin-bottom: 90px;
+  }
 }

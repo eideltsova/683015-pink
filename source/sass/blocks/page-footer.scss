@@ -1,6 +1,5 @@
 .page-footer {
   text-align: center;
-  padding-top: 50px;
 }
 
 .page-footer__logo {
@@ -14,14 +13,24 @@
 }
 
 .page-footer__wrap {
-  display: none;
+  width: 280px;
+  margin: 0 auto;
+  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--index {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrap {
-    display: flex;
+    min-height: 125px;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 35px 0;
     width: 620px;
     margin: 0 auto;
   }
@@ -29,7 +38,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrap {
-    width: 960px;
-    padding: 70px 0;
+    width: 940px;
+    min-height: 170px;
   }
 }
