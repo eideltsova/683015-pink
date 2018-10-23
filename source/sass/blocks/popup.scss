@@ -31,15 +31,13 @@
   }
 }
 
-.popup__button-wrap {
-  width: auto;
-}
-
 .popup__button {
   width: 280px;
 }
 
 .popup__button-wrap {
+  width: auto;
+
   &--correctly {
     padding: 50px 20px;
     background-color: $grey;

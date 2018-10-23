@@ -33,7 +33,7 @@
 
 .page-header__content {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   min-width: 280px;
 }
 
@@ -78,7 +78,7 @@
     display: flex;
     width: 620px;
     margin: 0 auto;
-    bottom: 0px;
+    bottom: 0;
   }
 
   .page-header__logo {
