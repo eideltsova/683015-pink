@@ -10,31 +10,35 @@
 
   <header class="page-header page-header--form">
     <div class="page-header__wrap">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-      </a>
-      <nav class="main-nav main-nav--close">
-        <button class="main-nav__switch" type="button"></button>
-        <div class="main-nav__wrap">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link  main-nav__link--active">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__menu-wrap">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+        </a>
+        <nav class="main-nav main-nav--close">
+          <button class="main-nav__switch" type="button">
+            <img src="img/icon-menu-cross.svg" alt="Close menu">
+          </button>
+          <div class="main-nav__wrap">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  main-nav__link--active">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
     <div class="page-header__title">
-      <h1 class="page-header__title-text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="page-header__title-text page-header__title-text--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
   </header>
 
@@ -42,7 +46,7 @@
     <div class="page-main__wrap">
       <section class="competition-form">
         <div class="competition-form__title">
-          <p class="competition-form__title-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="competition-form__title-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="competition-form__title-text competition-form__title-text--call">&nbsp Пожалуйста, заполните форму ниже:</span></p>
         </div>
         <form class="form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="form-field form-field--name">
@@ -66,7 +70,7 @@
             <div class="form-field__title-wrap">
               <legend class="form-field__title">Ваши безбашенные достижения в путешествии</legend>
             </div>
-            <ul class="form-field__list">
+            <ul class="form-field__list form-field__list--achievements">
               <li class="form-field__item form-checkbox">
                 <input class="form-checkbox__input" type="checkbox" id="achievements-1" name="achievements" value="Сделал селфи с акулой" checked>
                 <label class="form-checkbox__label" for="achievements-1">Сделал селфи с акулой</label>
@@ -95,14 +99,14 @@
           </fieldset>
 
           <fieldset class="form-field form-field--contacts">
-            <legend class="form-field__title visually-hidden">Контакты</legend>
-            <ul class="form-field__list">
-              <li class="form-field__item form-text">
-                <label class="form-text__label" for="phone">Номер телефона</label>
+            <legend class="form-field__title form-field__title--contacts">Контактная информация</legend>
+            <ul class="form-field__list form-field__list--contacts">
+              <li class="form-field__item form-text form-text--contacts">
+                <label class="form-text__label form-text__label--contacts" for="phone">Номер телефона</label>
                 <input class="form-text__input" type="text" name="phone" id="phone" placeholder="Номер телефона">
               </li>
-              <li class="form-field__item form-text">
-                <label class="form-text__label" for="email">Адрес почты</label>
+              <li class="form-field__item form-text form-text--contacts">
+                <label class="form-text__label form-text__label--contacts" for="email">Адрес почты</label>
                 <input class="form-text__input" type="text" name="email" id="email" placeholder="Введите почту *">
               </li>
             </ul>
@@ -129,13 +133,15 @@
           </fieldset>
 
           <fieldset class="form-field form-field--emotions">
-            <legend class="form-field__title">Опишите свои эмоции</legend>
+            <div class="form-field__title-wrap">
+              <legend class="form-field__title">Опишите свои эмоции</legend>
+            </div>
             <textarea class="form-field__textarea" name="description-emotions" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
 
           <div class="form-field form-field--wrap">
             <button class="form-field__button square-button" type="submit">Отправить форму</button>
-            <p class="form-field__button-notice"><span class="form-field__button-symbol"> * </span>— Обязательные поля</p>
+            <p class="form-field__button-notice"><span class="form-field__button-symbol"> * </span>— Обязательные<span class="form-field__button-notice form-field__button-notice--add">&nbsp для заполнения</span> поля</p>
           </div>
         </form>
       </section>
@@ -175,7 +181,7 @@
       <div class="popup__content popup__content--correctly">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</div>
     </div>
     <div class="popup__button-wrap popup__button-wrap--correctly">
-      <button class="popup__button square-button" type="button">Закрыть окно</button>
+      <button class="popup__button square-button popup__button--correctly" type="button">Закрыть окно</button>
     </div>
   </div>
 

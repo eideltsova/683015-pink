@@ -6,7 +6,8 @@
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 62%, url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
   background-color: $dark-blue;
 
-  &--photo {
+  &--photo,
+  &--form {
     height: 500px;
     background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0 665%;
     background-color: $dark-blue;
@@ -51,6 +52,10 @@
   font-size: 24px;
   line-height: normal;
   font-weight: 300;
+
+  &--form {
+    padding: 40px 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -60,7 +65,8 @@
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat 50% 100%, url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
     background-color: $dark-blue;
 
-    &--photo {
+    &--photo,
+    &--form {
       height: 695px;
       background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -740%;
       background-color: $dark-blue;
@@ -92,6 +98,10 @@
     padding: 75px 0 135px;
     font-size: 50px;
     line-height: 60px;
+
+    &--form {
+      padding: 75px 0;
+    }
   }
 }
 
@@ -102,7 +112,8 @@
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat 75% 100%, url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
     background-color: $dark-blue;
 
-    &--photo {
+    &--photo,
+    &--form {
       height: 395px;
       background: url("../img/bg-back-desktop@1x.jpg") no-repeat center 0;
       background-color: $dark-blue;
@@ -127,5 +138,9 @@
 
   .page-header__logo {
     padding: 25px 0 43px;
+  }
+
+  .page-header__title {
+    width: 940px;
   }
 }
