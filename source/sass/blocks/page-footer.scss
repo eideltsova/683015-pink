@@ -1,9 +1,44 @@
 .page-footer {
   text-align: center;
-  padding-top: 45px;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 150px;
 }
 
 .page-footer__logo-img {
   width: 147px;
   height: 40px;
+}
+
+.page-footer__wrap {
+  width: 280px;
+  margin: 0 auto;
+  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--index {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrap {
+    min-height: 125px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrap {
+    width: 940px;
+    min-height: 170px;
+  }
 }

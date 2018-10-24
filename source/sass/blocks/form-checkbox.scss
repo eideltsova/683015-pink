@@ -4,3 +4,19 @@
   line-height: 30px;
   margin-bottom: 40px;
 }
+
+@media (min-width: $desktop-width) {
+  .form-checkbox {
+    width: 260px;
+
+    &:first-child,
+    &:nth-child(3n),
+    &:nth-child(5n) {
+      order: -1;
+    }
+
+    &:last-child {
+      order: 1;
+    }
+  }
+}

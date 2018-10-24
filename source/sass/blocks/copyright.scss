@@ -6,3 +6,15 @@
 .copyright__developed {
   line-height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__developed {
+    font-size: 18px;
+  }
+}

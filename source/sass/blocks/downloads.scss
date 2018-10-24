@@ -1,12 +1,22 @@
 .downloads {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 30px 20px;
   min-height: 270px;
-  margin: auto;
   background-color: $dark-blue;
+}
+
+.downloads__lead {
+  display: none;
 }
 
 .downloads__list {
   @include list-reset;
+  width: 206px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
 }
 
 .downloads__item {
@@ -30,5 +40,42 @@
 .downloads__describing {
   color: $white;
   font-weight: 300;
+  text-align: center;
   padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .downloads {
+    width: 300px;
+    padding: 95px 0;
+    background-color: transparent;
+  }
+
+  .page-header__content {
+    display: flex;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .downloads__lead {
+    display: block;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0 50px;
+    color: $white;
+    font-size: 40px;
+    line-height: 68px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .downloads {
+    padding: 120px 0;
+  }
+
+  .downloads__lead {
+    margin-bottom: 55px;
+  }
 }

@@ -1,4 +1,154 @@
+.publication-editor {
+  display: flex;
+  flex-direction: column;
+}
+
 .publication-editor__form {
-  padding: 20px;
+  padding: 20px 0 30px;
   background-color: $light-grey;
+}
+
+.publication-editor__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.publication-editor__list {
+  display: flex;
+  justify-content: space-around;
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.publication-editor__button {
+  width: 44px;
+  height: 44px;
+}
+
+.publication-editor__example {
+  display: block;
+  width: 280px;
+  height: 374px;
+  margin-bottom: 40px;
+}
+
+.publication-editor__control {
+  width: 280px;
+  height: 50px;
+  outline: 1px solid red;
+  margin-bottom: 50px;
+
+  &:nth-child(2n),
+  &:nth-child(3n) {
+    display: none;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .publication-editor__form {
+    padding: 55px 0;
+  }
+
+  .publication-editor__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  .publication-editor__example {
+    margin: 0;
+    width: 300px;
+    height: 400px;
+  }
+
+  .publication-editor__tooling {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+
+  .publication-editor__list {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .publication-editor__control-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 240px;
+  }
+
+  .publication-editor__control {
+    width: auto;
+    height: 30px;
+    outline: 1px solid red;
+    margin-bottom: 0;
+
+    &:nth-child(2n),
+    &:nth-child(3n) {
+      display: block;
+    }
+  }
+
+  .publication-editor__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 300px;
+    padding: 0 20px;
+    height: 140px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .publication-editor__form {
+    background: none;
+    padding: 0;
+  }
+
+  .publication-editor__wrap {
+    width: 940px;
+    padding: 60px 60px 70px 90px;
+    background-color: $light-grey;
+  }
+
+  .publication-editor__example {
+    width: 300px;
+    height: 400px;
+  }
+
+  .publication-editor__tooling {
+    width: 410px;
+  }
+
+  .publication-editor__control-wrap {
+    height: 200px;
+    width: 350px;
+  }
+
+  .publication-editor__buttons {
+    width: 410px;
+    height: auto;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+
+  .publication-editor__upload-button,
+  .publication-editor__cancel-button {
+    width: 185px;
+  }
 }

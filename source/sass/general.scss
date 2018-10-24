@@ -1,4 +1,6 @@
 body {
+  margin: 0 auto;
+  padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -38,4 +40,16 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: 960px;
+  }
 }

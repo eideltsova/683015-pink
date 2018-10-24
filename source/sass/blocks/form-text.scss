@@ -24,3 +24,34 @@
     color: $dark-blue;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .form-text {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    &--contacts {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .form-text__label {
+    padding: 0;
+    padding-right: 20px;
+
+    &--contacts {
+      margin-top: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-text {
+    &--contacts {
+      width: 375px;
+    }
+  }
+}
