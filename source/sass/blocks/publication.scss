@@ -42,14 +42,18 @@
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  min-height: 145px;
-  margin-bottom: 25px;
-  padding: 0 15px;
+  min-height: 121px;
+  padding: 0 17px 20px;
   background-color: $light-grey;
 
   &--panorama {
-    padding: 0 20px;
+    padding: 0 18px 20px;
+    margin: 0;
   }
+}
+
+.publication__title {
+  padding-top: 17px;
 }
 
 .publication__author {
@@ -64,18 +68,33 @@
 
 .publication__text {
   @include indentation-reset;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .publication__active {
   display: flex;
+  align-items: center;
 }
 
 .publication__active-likes {
   display: block;
+  padding-left: 18px;
   color: $pink;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+.publication__button {
+  width: 13px;
+  height: 12px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.publication__button-img {
+  fill: $pink;
 }
 
 .publication-list {
@@ -84,6 +103,7 @@
   flex-wrap: wrap;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {

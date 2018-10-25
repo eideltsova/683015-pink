@@ -1,7 +1,7 @@
 .photogallery {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 46px;
 }
 
 .photogallery__title {
@@ -15,6 +15,11 @@
   margin-bottom: 50px;
   text-align: center;
   line-height: 30px;
+
+  &--bottom {
+    padding: 0 10px;
+    margin-bottom: 44px;
+  }
 }
 
 @media (min-width: $tablet-width) {

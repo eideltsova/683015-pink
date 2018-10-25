@@ -1,13 +1,26 @@
 .form-field {
   @include indentation-reset;
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   &--name,
   &--contacts,
   &--emotions {
     width: 280px;
     margin: 0 auto;
+  }
+
+  &--contacts,
+  &--name {
+    margin-bottom: 26px;
+  }
+
+  &--apps {
+    margin-bottom: 20px;
+  }
+
+  &--emotions {
+    margin-bottom: 42px;
   }
 
   &--apps,
@@ -32,11 +45,19 @@
 }
 
 .form-field__item {
-  margin-bottom: 25px;
+  margin-bottom: 17px;
 }
 
 .form-field__title-wrap {
-  margin: 40px 0;
+  margin: 38px 0 42px;
+
+  &--apps {
+    margin: 35px 0 40px;
+  }
+
+  &--emotions {
+    margin: 18px 0;
+  }
 }
 
 .form-field__title {
@@ -53,7 +74,7 @@
 
 .form-field__textarea {
   width: 100%;
-  padding: 20px;
+  padding: 13px 18px 5px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $grey;
@@ -88,7 +109,7 @@
 
 .form-field__button {
   width: 280px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 

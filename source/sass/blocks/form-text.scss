@@ -1,13 +1,13 @@
 .form-text__label {
   color: $pink;
-  padding-left: 20px;
+  padding-left: 23px;
   text-transform: uppercase;
 }
 
 .form-text__input {
   font-size: 18px;
   line-height: 30px;
-  padding: 20px;
+  padding: 15px 20px;
   width: 100%;
   margin-top: 10px;
   border: 2px solid $grey;
@@ -22,6 +22,14 @@
 
   &::-webkit-input-placeholder {
     color: $dark-blue;
+  }
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    border-color: $pink;
   }
 }
 

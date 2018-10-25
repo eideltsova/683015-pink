@@ -1,4 +1,27 @@
-.copyright__img {
+.copyright {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+  fill: $pink;
+
+  &:hover,
+  &:focus {
+    fill: $dark-blue;
+  }
+
+  &:active {
+    fill: $dark-blue-opacity;
+  }
+}
+
+.copyright__link {
+  display: block;
   width: 27px;
   height: 34px;
 }

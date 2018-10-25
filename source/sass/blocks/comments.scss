@@ -1,7 +1,8 @@
 .comments {
   width: auto;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 18px;
+  padding-bottom: 54px;
 }
 
 .comments__wrap {
@@ -26,7 +27,7 @@
 .comments__title {
   @include indentation-reset;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
   font-style: inherit;
   font-size: 18px;
   line-height: 30px;

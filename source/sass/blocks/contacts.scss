@@ -6,7 +6,7 @@
 .contacts__contacts-header {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .contacts__title,
@@ -14,6 +14,7 @@
   @include indentation-reset;
   font-size: 24px;
   font-weight: 300;
+  margin-bottom: 5px;
 }
 
 .contacts__list {
@@ -26,14 +27,15 @@
 
 .contacts__item {
   width: 280px;
-  margin-bottom: 25px;
-  padding: 0 25px;
+  margin-bottom: 18px;
+  padding: 0 22px;
 }
 
 .contacts__item-title {
   @include indentation-reset;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-size: 18px;
+  line-height: 30px;
   font-weight: 700;
 }
 
