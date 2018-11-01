@@ -66,5 +66,10 @@
   &:active::before {
     border-color: $pink;
   }
+}
 
+@media (min-width: $tablet-width) {
+  .form-radio__label {
+    padding-left: 57px;
+  }
 }

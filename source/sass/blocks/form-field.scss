@@ -29,7 +29,6 @@
     background-color: $light-grey;
   }
 
-
   &--wrap {
     width: 280px;
     margin: 0 auto;
@@ -117,15 +116,8 @@
   .form-field {
     &--name {
       width: 620px;
+      margin-bottom: 17px;
       order: -3;
-    }
-
-    &--apps {
-      order: -2;
-    }
-
-    &--contacts {
-      order: -1;
     }
 
     &--achievements,
@@ -140,15 +132,40 @@
       background-color: transparent;
     }
 
+    &--achievements {
+      padding: 50px 60px 0;
+      margin-bottom: 56px;
+    }
+
+    &--apps {
+      order: -2;
+      padding-bottom: 10px;
+      margin-bottom: 58px;
+    }
+
+    &--contacts {
+      order: -1;
+      padding: 26px 56px 10px;
+      margin-bottom: 56px;
+    }
+
+    &--emotions {
+      padding: 40px 59px 40px;
+      margin-bottom: 68px;
+    }
+
     &--wrap {
       width: 620px;
       margin: 0 auto;
-      margin-bottom: 10px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: baseline;
     }
+  }
+
+  .form-field__item {
+    margin-bottom: 41px;
   }
 
   .form-field__title {
@@ -159,6 +176,10 @@
 
   .form-field__title-wrap {
     display: contents;
+  }
+
+  .form-field__textarea {
+    padding-bottom: 0;
   }
 
   .form-field__button {
@@ -173,24 +194,33 @@
     margin-right: 0;
 
     &--name {
-      width: 440px;
+      width: 435px;
     }
 
     &--apps {
       width: 435px;
+      margin-top: 10px;
+      padding: 48px 50px 12px;
     }
 
     &--contacts {
-      padding: 40px 60px 0;
+      padding: 12px 58px 0;
     }
 
-    &--emotions,
+    &--emotions {
+      padding: 37px 60px 36px;
+    }
+
     &--achievements {
-      padding: 45px 60px;
+      padding: 50px 3px 5px 60px;
     }
   }
 
   .form-field__list {
+    &--apps {
+      padding-left: 25px;
+    }
+
     &--contacts,
     &--achievements {
       display: flex;
@@ -204,5 +234,13 @@
     &--add {
       display: inline-block;
     }
+  }
+
+  .form-field__title {
+    padding: 0;
+  }
+
+  .form-field__textarea {
+    height: 125px;
   }
 }

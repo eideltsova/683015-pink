@@ -1,6 +1,20 @@
 .contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 645px;
+  width: auto;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat center center;
+}
+
+.contacts__wrap {
+  position: absolute;
+  z-index: 1;
+  width: 320px;
+  min-height: 395px;
+  top: 33px;
+  padding-top: 45px;
+  background-color: $white;
 }
 
 .contacts__contacts-header {
@@ -23,6 +37,13 @@
   flex-wrap: wrap;
   width: 280px;
   margin: 0 auto;
+}
+
+.contacts__list-shape {
+  position: absolute;
+  z-index: 1;
+  top: 65%;
+  left: -43%;
 }
 
 .contacts__item {
@@ -57,14 +78,17 @@
 
 .contacts__map {
   display: block;
-  width: 100%;
+  position: absolute;
+  bottom: 0;
+  min-width: 320px;
   overflow: hidden;
 }
 
 .contacts__map-online {
+  border: 0;
   width: 100%;
-  border: none;
-  height: 200px;
+  height: 205px;
+  background-color: transparent;
 }
 
 @media (min-width: $tablet-width) {

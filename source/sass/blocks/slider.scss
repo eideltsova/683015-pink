@@ -1,3 +1,20 @@
-.slider__button-wrap {
-  min-width: 140px;
+.slider__radio-definition {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: $dark-blue-opacity;
+  border: 3px solid $white;
+  border-radius: 50px;
+
+  &--active {
+    border-color: $dark-blue;
+    background-color: $white;
+  }
 }
+
+.slider__button {
+  display: none;
+}
+
+
+

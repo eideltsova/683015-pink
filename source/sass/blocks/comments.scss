@@ -1,7 +1,7 @@
 .comments {
   width: auto;
   text-align: center;
-  padding-top: 18px;
+  padding-top: 40px;
   padding-bottom: 54px;
 }
 
@@ -11,6 +11,14 @@
   flex-wrap: wrap;
   width: 280px;
   margin: 0 auto;
+}
+
+.comments__slider,
+.tatiffs__slider {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80px;
 }
 
 .comments__item {

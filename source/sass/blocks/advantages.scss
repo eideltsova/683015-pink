@@ -11,6 +11,7 @@
 }
 
 .advantages__list-wrap {
+  background: url("../img/bg-triangle-white.svg") no-repeat top center;
   background-color: $light-grey;
 }
 
@@ -20,11 +21,15 @@
   font-size: 24px;
   line-height: 27px;
   font-weight: 300;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__list {
   @include list-reset;
-  padding-top: 80px;
+  padding-top: 115px;
   width: 280px;
   margin: 0 auto;
   display: flex;

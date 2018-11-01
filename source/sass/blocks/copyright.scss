@@ -33,11 +33,20 @@
 @media (min-width: $tablet-width) {
   .copyright {
     width: 150px;
+    padding-left: 20px;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .copyright {
+    width: 153px;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
   .copyright__developed {
+    display: block;
     font-size: 18px;
   }
 }

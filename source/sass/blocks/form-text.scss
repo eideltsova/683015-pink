@@ -41,7 +41,35 @@
     align-items: baseline;
 
     &--contacts {
+      position: relative;
       flex-direction: column-reverse;
+      margin-bottom: 20px;
+
+      &:first-child {
+        &::after {
+          content: "";
+          width: 61px;
+          height: 61px;
+          top: 10px;
+          right: 0;
+          position: absolute;
+          background: url(../img/icon-phone.svg) no-repeat center center;
+          background-color: $grey;
+        }
+      }
+
+      &:last-child {
+          &::after {
+          content: "";
+          width: 61px;
+          height: 61px;
+          top: 10px;
+          right: 0;
+          position: absolute;
+          background: url(../img/icon-mail.svg) no-repeat center center;
+          background-color: $grey;
+        }
+      }
     }
   }
 
@@ -50,16 +78,30 @@
     padding-right: 20px;
 
     &--contacts {
-      margin-top: 15px;
-      padding-left: 15px;
+      margin-top: 14px;
+      padding-left: 21px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-text {
+    margin-bottom: 32px;
+
     &--contacts {
       width: 375px;
+      margin-bottom: 17px;
+
+      &:first-child,
+      &:last-child {
+        &::after {
+          top: 22px;
+        }
+      }
     }
+  }
+
+  .form-text__input {
+    margin-top: 21px;
   }
 }
