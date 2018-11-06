@@ -76,7 +76,7 @@
   .page-header {
     height: 985px;
     min-width: 660px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 50% 100%, url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
     background-color: $dark-blue;
 
     &--photo,
@@ -93,6 +93,7 @@
     width: 620px;
     margin: 0 auto;
     bottom: 0;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 50% 100%;
   }
 
   .page-header__logo {
@@ -131,7 +132,7 @@
   .page-header {
     height: 853px;
     width: auto;
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat -30% 100%, url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
     background-color: $dark-blue;
 
     &--photo,
@@ -157,6 +158,7 @@
 
   .page-header__content {
     min-width: 940px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat -14% 103%;
   }
 
   .page-header__logo {

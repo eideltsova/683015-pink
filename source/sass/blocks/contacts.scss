@@ -47,7 +47,7 @@
   top: 55%;
   left: 0;
   background: url(../img/bg-triangle-white-footer.svg) no-repeat center center;
-  background-size: cover;
+  background-size: 1200px 123px;
 }
 
 .contacts__item {
@@ -106,6 +106,7 @@
     position: initial;
     min-height: 335px;
     width: 660px;
+    margin: 0 auto;
     padding: 0;
   }
 
@@ -128,7 +129,7 @@
   }
 
   .contacts__list-shape {
-    width: 660px;
+    width: 100%;
     top: 45%;
   }
 
@@ -148,11 +149,12 @@
   }
 
   .contacts__map {
+    position: inherit;
     min-width: 660px;
   }
 
   .contacts__map-online {
-    height: 375px;
+    height: 395px;
   }
 }
 
@@ -186,7 +188,6 @@
   }
 
   .contacts__list-shape {
-    width: 960px;
     top: 42%;
   }
 
@@ -208,6 +209,6 @@
   }
 
   .contacts__map-online {
-    height: 505px;
+    height: 485px;
   }
 }

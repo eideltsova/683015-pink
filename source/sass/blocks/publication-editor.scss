@@ -23,11 +23,28 @@
   margin-bottom: 20px;
 }
 
+.publication-editor__range-wrap {
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 .publication-editor__button {
   padding: 0;
   background-color: transparent;
   border: none;
+  fill: $dark-blue-opacity;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: rgba($dark-blue, 0.5);
+  }
+
+  &:active,
+  &:disabled {
+    fill: $pink;
+  }
 
   &--crop {
     width: 44px;
@@ -46,23 +63,102 @@
   }
 }
 
-.publication-editor__example {
-  display: block;
-  width: 280px;
-  height: 374px;
-  margin-bottom: 40px;
-}
-
-.publication-editor__control {
-  width: 280px;
-  height: 50px;
-  outline: 1px solid red;
-  margin-bottom: 45px;
+.publication-editor__button--range {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  height: 40px;
+  background: transparent; /* Otherwise white in Chrome */
 
   &:nth-child(2n),
   &:nth-child(3n) {
     display: none;
   }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  &:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+
+  &::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2px solid $pink;
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+    background: $light-grey;
+    cursor: pointer;
+    margin-top: -6px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  }
+
+  &:active::-webkit-slider-thumb {
+    background: $pink;
+  }
+
+  /* All the same stuff for Firefox */
+  &::-moz-range-thumb {
+    border: 2px solid $pink;
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+    background: $light-grey;
+    cursor: pointer;
+  }
+
+  /* All the same stuff for IE */
+  &::-ms-thumb {
+    border: 2px solid $pink;
+    height: 14px;
+    width: 16px;
+    background: $light-grey;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: $dark-blue;
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    background: $dark-blue;
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: $dark-blue;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+}
+
+.publication-editor__example {
+  display: block;
+  width: 280px;
+  height: 374px;
+  margin-bottom: 40px;
 }
 
 
