@@ -129,9 +129,9 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    height: 855px;
+    height: 853px;
     width: auto;
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 75% 100%, url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat -30% 100%, url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
     background-color: $dark-blue;
 
     &--photo,
@@ -143,6 +143,7 @@
   }
 
   .page-header__wrap {
+    height: 110px;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgba($black, 0.3);
@@ -155,7 +156,7 @@
   }
 
   .page-header__content {
-    min-width: 950px;
+    min-width: 940px;
   }
 
   .page-header__logo {

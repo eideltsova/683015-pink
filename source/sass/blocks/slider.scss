@@ -17,4 +17,33 @@
 }
 
 
+@media (min-width: $desktop-width) {
+  .slider__button {
+    position: absolute;
+    top: 47%;
+    display: block;
+    width: 22px;
+    height: 41px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    fill: $dark-blue-opacity;
 
+    &:hover,
+    &focus {
+      fill: rgba($dark-blue, 0.6);
+    }
+
+    &:active {
+      fill: rgba($dark-blue, 0.1);
+    }
+
+    &--left {
+      left: 1%;
+    }
+
+    &--right {
+      right: 1%;
+    }
+  }
+}

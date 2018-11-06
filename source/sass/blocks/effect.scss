@@ -6,8 +6,9 @@
 
 @media (min-width: $tablet-width) {
   .effect {
+    display: block;
     background-color: $white;
-    margin-bottom: 70px;
+    margin-bottom: 26px;
   }
 
   .effect__wrap {
@@ -16,19 +17,28 @@
     flex-wrap: wrap;
     width: 620px;
     margin: 0 auto;
+    background: url("../img/icon-timer.svg") no-repeat left 65%;
+    background-size: 238px 276px;
   }
 
   .effect__description {
-    padding: 100px 0 60px;
+    padding: 95px 2px 60px 0;
     width: 310px;
     text-align: left;
   }
 
   .effect__time {
     @include indentation-reset;
-    padding: 165px 0 90px 65px;
     display: block;
-    width: 300px;
+    width: 202px;
+    height: 202px;
+    border: 15px solid $pink;
+    margin-left: 19px;
+    margin-top: 65px;
+    align-self: center;
+    padding-left: 54px;
+    padding: 7px 30px;
+    border-radius: 100px;
     font-size: 96px;
     line-height: 149.47px;
     font-weight: 700;
@@ -37,8 +47,7 @@
 
   .effect__title {
     @include indentation-reset;
-    padding-right: 140px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -47,7 +56,7 @@
 
   .effect__text {
     @include indentation-reset;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .effect__link {
@@ -62,27 +71,46 @@
   }
 
   .effect__wrap {
-    width: 950px;
+    width: 940px;
+    background-size: 298px 345px;
+    background-position-y: 30%;
   }
 
   .effect__description {
-    width: 580px;
+    width: 575px;
+    padding: 125px 0px 115px;
   }
 
   .effect__time {
-    padding-left: 90px;
+    width: 253px;
+    height: 253px;
+    padding: 11px 30px 35px 42px;
     padding-bottom: 140px;
+    margin-left: 23px;
+    margin-top: 10px;
+    font-size: 120px;
+    line-height: 186.84px;
+    border-radius: 130px;
   }
 
   .effect__title {
     line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .effect__title br {
+    display: none;
   }
 
   .effect__text {
     font-size: 18px;
     line-height: 30px;
     padding-right: 55px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+  }
+
+  .effect__text br {
+    display: none;
   }
 
   .effect__link {

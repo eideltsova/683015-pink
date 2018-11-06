@@ -52,13 +52,18 @@
     width: 620px;
     margin: 0 auto;
     padding-top: 37px;
+
+    &--index {
+      display: flex;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrap {
     width: 940px;
-    min-height: 170px;
+    min-height: 197px;
+    padding-top: 73px;
   }
 
   .page-footer__logo-img {
@@ -67,7 +72,7 @@
     display: none;
 
     &--desktop {
-      display: block;
+      display: flex;
     }
   }
 }

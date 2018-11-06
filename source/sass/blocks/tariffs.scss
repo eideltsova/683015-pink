@@ -3,14 +3,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tariffs {
+    padding-top: 108px;
+    padding-bottom: 20px;
+    background: url("../img/bg-triangle-white.svg") no-repeat center top;
+    background-size: contain;
+  }
+
   .tariffs__wrap {
     width: 620px;
     margin: 0 auto;
   }
+
+  .tatiffs__slider {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .tariffs {
+    padding-top: 140px;
+    padding-bottom: 50px;
+  }
+
+
   .tariffs__wrap {
-    width: 960px;
+    width: 940px;
   }
 }
