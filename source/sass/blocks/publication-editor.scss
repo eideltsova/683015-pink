@@ -84,6 +84,7 @@
 }
 
 .publication-editor__button--range {
+  display: none;
   appearance: none; /*-webkit не пропускает линтер*/
   /*-webkit-appearance: none;  Hides the slider so that custom slider can be made */
   width: 100%; /* Specific width is required for Firefox. */
@@ -107,6 +108,7 @@
   &::-webkit-slider-thumb {
     appearance: none; /*-webkit не пропускает линтер*/
     /*-webkit-appearance: none;*/
+    border: 2px solid $pink;
     height: 14px;
     width: 14px;
     border-radius: 7px;
