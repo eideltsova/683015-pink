@@ -53,20 +53,20 @@
           top: 10px;
           right: 0;
           position: absolute;
-          background: url(../img/icon-phone.svg) no-repeat center center;
+          background: url("../img/icon-phone.svg") no-repeat center center;
           background-color: $grey;
         }
       }
 
       &:last-child {
-          &::after {
+        &::after {
           content: "";
           width: 61px;
           height: 61px;
           top: 10px;
           right: 0;
           position: absolute;
-          background: url(../img/icon-mail.svg) no-repeat center center;
+          background: url("../img/icon-mail.svg") no-repeat center center;
           background-color: $grey;
         }
       }

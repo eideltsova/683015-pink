@@ -236,6 +236,7 @@
     &--contrast {
       padding-right: 20px;
       padding-bottom: 5px;
+
       .publication-editor__icon {
         width: 16px;
         height: 16px;
@@ -243,7 +244,6 @@
     }
 
     &--checked {
-
       & + .publication-editor__button--range {
         position: inherit;
         width: 202px;
