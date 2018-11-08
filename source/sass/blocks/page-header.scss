@@ -82,7 +82,7 @@
     &--photo,
     &--form {
       height: 695px;
-      background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -740%;
+      background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -750%;
       background-color: $dark-blue;
     }
   }
@@ -125,6 +125,10 @@
     &--form {
       padding: 70px 0;
     }
+
+    &--photo {
+      padding: 67px 0;
+    }
   }
 }
 
@@ -148,6 +152,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgba($black, 0.3);
+  }
+
+  .page-header__title-text {
+    &--photo {
+      padding: 64px 145px;
+    }
   }
 
   .page-header__menu-wrap {

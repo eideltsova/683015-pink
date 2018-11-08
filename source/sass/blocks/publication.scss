@@ -11,10 +11,26 @@
 .publication__photo {
   display: block;
   width: 100%;
+
+  &--panorama {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
 .publication__photo-img {
   display: block;
+
+  &--tablet-panorama,
+  &--desktop-panorama {
+    display: none;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 .publication__photo-category {
@@ -113,6 +129,7 @@
 
     &--panorama {
       width: 100%;
+      margin-bottom: 50px;
     }
   }
 
@@ -124,11 +141,14 @@
 
   .publication__content {
     min-height: 155px;
+    padding: 6px 32px 23px 27px;
+    justify-content: space-between;
 
     &--panorama {
+      min-height: 120px;
       flex-direction: row;
       justify-content: space-between;
-      padding-top: 30px;
+      padding: 7px 28px 15px;
     }
   }
 
@@ -136,14 +156,36 @@
     flex-direction: row;
     justify-content: space-between;
     width: 620px;
+    margin-bottom: 46px;
   }
 
   .publication__photo {
     height: 300px;
 
     &--panorama {
+      width: auto;
       height: 509px;
     }
+  }
+
+  .publication__photo-img {
+    display: none;
+
+    &--tablet-panorama {
+      display: block;
+      height: 509px;
+      width: 700px;
+    }
+
+    &--tablet {
+      display: block;
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  .publication__photo-category {
+    top: 58px;
   }
 
   .publication__active {
@@ -153,6 +195,20 @@
     &--panorama {
       width: 150px;
     }
+  }
+
+  .publication__active-likes {
+    padding-left: 0;
+
+    &--panorama {
+      padding-left: 30px;
+      align-self: flex-end;
+    }
+
+  }
+
+  .publication__button--panorama {
+    padding-top: 7px;
   }
 
   .publication__text-wrap--panorama {
@@ -169,6 +225,7 @@
 @media (min-width: $desktop-width) {
   .publication {
     min-height: 555px;
+    margin-bottom: 52px;
   }
 
   .publication__wrap {
@@ -181,6 +238,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 940px;
+    margin-bottom: 8px;
   }
 
   .publication__photo {
@@ -188,6 +246,37 @@
 
     &--panorama {
       height: 506px;
+    }
+  }
+
+  .publication__photo-category {
+    top: 55px;
+    right: 10px;
+  }
+
+  .publication__photo-img {
+    display: none;
+
+    &--desktop-panorama {
+      display: block;
+      height: 506px;
+      width: 1200px;
+    }
+
+    &--desktop {
+      display: block;
+      height: 400px;
+    }
+  }
+
+  .publication__content {
+    min-height: 155px;
+    padding: 6px 32px 23px 27px;
+    justify-content: space-between;
+
+    &--panorama {
+      min-height: 96px;
+      padding-bottom: 15px;
     }
   }
 
