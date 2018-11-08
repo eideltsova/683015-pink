@@ -158,6 +158,10 @@
     &--photo {
       padding: 64px 145px;
     }
+
+    &--form {
+      padding: 60px 0;
+    }
   }
 
   .page-header__menu-wrap {
@@ -190,11 +194,5 @@
 
   .page-header__title {
     width: 940px;
-  }
-
-  .page-header__title-text {
-    &--form {
-      padding: 60px 0;
-    }
   }
 }

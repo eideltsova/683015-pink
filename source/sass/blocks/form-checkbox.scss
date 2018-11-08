@@ -1,5 +1,4 @@
 .form-checkbox {
-  display: block;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 42px;
@@ -44,7 +43,7 @@
     border-color: $pink;
   }
 
-  &:active:after {
+  &:active::after {
     display: block;
   }
 }
@@ -60,7 +59,7 @@
     border-color: $dark-blue;
   }
 
-  &:active:after {
+  &:active::after {
     display: none;
   }
 }

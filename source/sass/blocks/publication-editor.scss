@@ -84,15 +84,11 @@
 }
 
 .publication-editor__button--range {
-  display: none;
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  appearance: none; /*-webkit не пропускает линтер*/
+  /*-webkit-appearance: none;  Hides the slider so that custom slider can be made */
   width: 100%; /* Specific width is required for Firefox. */
   height: 55px;
   background: transparent; /* Otherwise white in Chrome */
-
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-  }
 
   &:focus {
     outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
@@ -109,8 +105,8 @@
   }
 
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 2px solid $pink;
+    appearance: none; /*-webkit не пропускает линтер*/
+    /*-webkit-appearance: none;*/
     height: 14px;
     width: 14px;
     border-radius: 7px;
@@ -159,15 +155,6 @@
     cursor: pointer;
     background: $dark-blue;
   }
-
-  &::-ms-track {
-    width: 100%;
-    height: 2px;
-    cursor: pointer;
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-  }
 }
 
 .publication-editor__example {
@@ -176,7 +163,6 @@
   height: 374px;
   margin-bottom: 40px;
 }
-
 
 @media (min-width: $tablet-width) {
   .publication-editor__form {
@@ -257,6 +243,7 @@
     }
 
     &--checked {
+
       & + .publication-editor__button--range {
         position: inherit;
         width: 202px;

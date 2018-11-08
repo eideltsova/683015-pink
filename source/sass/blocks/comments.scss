@@ -57,6 +57,7 @@
   .comments {
     padding-bottom: 0;
   }
+
   .comments__wrap {
     width: 620px;
   }
@@ -98,7 +99,7 @@
       position: absolute;
       top: 11%;
       left: 47%;
-      background: url(../img/icon-quotes.svg) no-repeat center center;
+      background: url("../img/icon-quotes.svg") no-repeat center center;
     }
   }
 
