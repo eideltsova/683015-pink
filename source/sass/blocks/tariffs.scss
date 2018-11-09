@@ -2,6 +2,13 @@
   padding: 78px 0 11px;
 }
 
+.tariffs__slider {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80px;
+}
+
 @media (min-width: $tablet-width) {
   .tariffs {
     padding-top: 108px;
@@ -15,7 +22,7 @@
     margin: 0 auto;
   }
 
-  .tatiffs__slider {
+  .tariffs__slider {
     display: none;
   }
 }
