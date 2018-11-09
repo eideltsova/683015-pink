@@ -2,13 +2,32 @@
   position: relative;
   width: 12px;
   height: 12px;
-  background-color: $dark-blue-opacity;
-  border: 3px solid $white;
-  border-radius: 50px;
+  cursor: pointer;
 
-  &--active {
-    border-color: $dark-blue;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: $dark-blue-opacity;
+    border: 3px solid $white;
+    border-radius: 50px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: rgba($dark-blue, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba($dark-blue, 0.1);
+  }
+}
+
+.slider__radio:checked + .slider__radio-definition {
+  &::before {
     background-color: $white;
+    border-color: $dark-blue;
   }
 }
 
