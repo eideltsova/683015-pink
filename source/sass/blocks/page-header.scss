@@ -15,8 +15,6 @@
 }
 
 .page-header__wrap {
-  display: flex;
-  flex-direction: column;
   min-width: 238px;
   margin: 0 auto;
 }
@@ -150,7 +148,6 @@
   .page-header__wrap {
     height: 110px;
     flex-direction: row;
-    flex-wrap: wrap;
     background-color: rgba($black, 0.3);
   }
 
