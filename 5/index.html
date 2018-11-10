@@ -139,9 +139,6 @@
         <h2 class="visually-hidden">Отзывы пользователей о приложении</h2>
         <div class="comments__wrap">
           <div class="comments__list slider">
-            <input class="slider__radio visually-hidden" name="radio-toggle" id="radio-1" type="radio" checked>
-            <input class="slider__radio visually-hidden" name="radio-toggle" id="radio-2" type="radio">
-            <input class="slider__radio visually-hidden" name="radio-toggle" id="radio-3" type="radio">
             <blockquote class="comments__item">
               <div class="comments__title-wrap">
                 <cite class="comments__title">Николай Петров</cite>
@@ -164,9 +161,18 @@
               <p class="comments__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
             <div class="comments__slider slider">
-              <label class="slider__radio-definition slider__radio-definition--active" for="radio-1"><span class="visually-hidden">Текущий отзыв</span></label>
-              <label class="slider__radio-definition" for="radio-2"><span class="visually-hidden">Следующий отзыв</span></label>
-              <label class="slider__radio-definition" for="radio-3"><span class="visually-hidden">Следующий отзыв</span></label>
+              <input class="slider__radio visually-hidden" name="radio-toggle" id="radio-1" type="radio" checked>
+              <label class="slider__radio-definition" for="radio-1">
+                <span class="visually-hidden">Текущий отзыв</span>
+              </label>
+              <input class="slider__radio visually-hidden" name="radio-toggle" id="radio-2" type="radio">
+              <label class="slider__radio-definition" for="radio-2">
+                <span class="visually-hidden">Следующий отзыв</span>
+              </label>
+              <input class="slider__radio visually-hidden" name="radio-toggle" id="radio-3" type="radio">
+              <label class="slider__radio-definition" for="radio-3">
+                <span class="visually-hidden">Следующий отзыв</span>
+              </label>
             </div>
             <button class="slider__button slider__button--left" type="button">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
@@ -186,9 +192,6 @@
       <section class="tariffs">
         <h2 class="visually-hidden">Тарифы использования приложения</h2>
         <div class="tariffs__wrap">
-          <input class="slider-radio visually-hidden" name="radio-toggle" id="tariff-1" type="radio">
-          <input class="slider-radio visually-hidden" name="radio-toggle" id="tariff-2" type="radio" checked>
-          <input class="slider-radio visually-hidden" name="radio-toggle" id="tariff-3" type="radio">
           <div class="tariffs__table-wrap">
             <table class="tariffs-table">
               <thead>
@@ -277,10 +280,19 @@
                 </tr>
               </tbody>
             </table>
-            <div class="tatiffs__slider slider">
-              <label class="slider__radio-definition" for="tariff-1"><span class="visually-hidden">Текущий тариф</span></label>
-              <label class="slider__radio-definition slider__radio-definition--active" for="tariff-2"><span class="visually-hidden">Следующий тариф</span></label>
-              <label class="slider__radio-definition" for="tariff-3"><span class="visually-hidden">Следующий тариф</span></label>
+            <div class="tariffs__slider slider">
+              <input class="slider__radio visually-hidden" name="toggle-tariffs" id="tariffs-1" type="radio">
+              <label class="slider__radio-definition" for="tariffs-1">
+                <span class="visually-hidden">Текущий отзыв</span>
+              </label>
+              <input class="slider__radio visually-hidden" name="toggle-tariffs" id="tariffs-2" type="radio" checked>
+              <label class="slider__radio-definition" for="tariffs-2">
+                <span class="visually-hidden">Следующий отзыв</span>
+              </label>
+              <input class="slider__radio visually-hidden" name="toggle-tariffs" id="tariffs-3" type="radio">
+              <label class="slider__radio-definition" for="tariffs-3">
+                <span class="visually-hidden">Следующий отзыв</span>
+              </label>
             </div>
           </div>
         </div>
