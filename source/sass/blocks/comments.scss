@@ -1,7 +1,8 @@
 .comments {
   width: auto;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 40px;
+  padding-bottom: 54px;
 }
 
 .comments__wrap {
@@ -10,6 +11,13 @@
   flex-wrap: wrap;
   width: 280px;
   margin: 0 auto;
+}
+
+.comments__slider {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80px;
 }
 
 .comments__item {
@@ -26,10 +34,10 @@
 .comments__title {
   @include indentation-reset;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-style: inherit;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 35px;
   font-weight: 700;
   color: $black;
 }
@@ -45,12 +53,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .comments {
+    padding-bottom: 0;
+  }
+
   .comments__wrap {
     width: 620px;
   }
 
   .comments__item {
     flex-direction: column-reverse;
+    margin-bottom: 33px;
   }
 
   .comments__content {
@@ -75,10 +88,22 @@
 
 @media (min-width: $desktop-width) {
   .comments {
-    padding: 190px 0 40px;
+    position: relative;
+    padding-top: 160px;
+
+    &::before {
+      content: "";
+      width: 79px;
+      height: 64px;
+      position: absolute;
+      top: 11%;
+      left: 47%;
+      background: url("../img/icon-quotes.svg") no-repeat center center;
+    }
   }
 
   .comments__wrap {
+    position: relative;
     width: 960px;
   }
 

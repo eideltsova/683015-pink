@@ -28,6 +28,7 @@
   &--pink {
     color: $pink;
     border: 3px solid $pink;
+    margin-bottom: 13px;
 
     &:hover,
     &:focus {
@@ -57,5 +58,11 @@
       border-color: $dark-grey;
       background-color: $dark-grey;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-round {
+    font-size: 21px;
   }
 }

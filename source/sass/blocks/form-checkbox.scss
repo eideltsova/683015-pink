@@ -1,8 +1,73 @@
+.form-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 42px;
+}
+
 .form-checkbox__label {
-  padding-left: 30px;
+  position: relative;
+  padding-left: 70px;
+  min-height: 40px;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 40px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 39px;
+    height: 39px;
+    border: 2px solid $grey;
+    background-color: $white;
+    position: absolute;
+    top: -4px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    left: 9px;
+    top: 7px;
+    background: url("../img/icon-yes.svg") no-repeat center center;
+    display: none;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $dark-blue;
+  }
+
+  &:active::before {
+    border-color: $pink;
+  }
+
+  &:active::after {
+    display: block;
+  }
+}
+
+.form-checkbox__input:checked + .form-checkbox__label {
+  &::after {
+    display: block;
+    background-color: transparent;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $dark-blue;
+  }
+
+  &:active::after {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-checkbox__label {
+    padding-left: 57px;
+  }
 }
 
 @media (min-width: $desktop-width) {

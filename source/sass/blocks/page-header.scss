@@ -3,41 +3,53 @@
   height: 990px;
   width: auto;
   min-width: $mobile-width;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 62%, url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat -2% 62%, url("../img/bg-back-mobile@1x.jpg") no-repeat center 49%;
   background-color: $dark-blue;
 
   &--photo,
   &--form {
-    height: 500px;
-    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0 665%;
+    height: 495px;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0 778%;
     background-color: $dark-blue;
   }
 }
 
 .page-header__wrap {
-  display: flex;
-  flex-direction: column;
   min-width: 238px;
   margin: 0 auto;
 }
 
 .page-header__logo {
   display: block;
-  padding: 20px 20px 25px 20px;
+  padding: 22px 20px 20px 19px;
+
+  &:hover path,
+  &:focus path {
+    fill: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo-img {
-  width: 75px;
-  height: 22px;
+  &--mobile {
+    width: 75px;
+    height: 22px;
+  }
+
+  &--desktop,
+  &--tablet {
+    display: none;
+  }
 }
 
 .page-header__content {
   position: absolute;
   bottom: 0;
-  min-width: 280px;
+  left: 20px;
 }
-
-/*photo*/
 
 .page-header__title {
   width: 280px;
@@ -45,16 +57,16 @@
 }
 
 .page-header__title-text {
-  padding: 35px 0 80px;
+  padding: 30px 0 80px;
   margin: 0;
   color: $white;
   text-align: center;
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 300;
 
   &--form {
-    padding: 40px 0;
+    padding: 30px 0;
   }
 }
 
@@ -62,13 +74,13 @@
   .page-header {
     height: 985px;
     min-width: 660px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 50% 100%, url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
     background-color: $dark-blue;
 
     &--photo,
     &--form {
       height: 695px;
-      background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -740%;
+      background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -750%;
       background-color: $dark-blue;
     }
   }
@@ -79,15 +91,24 @@
     width: 620px;
     margin: 0 auto;
     bottom: 0;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 50% 100%;
   }
 
   .page-header__logo {
-    padding: 25px 20px 40px;
+    padding: 26px 20px 45px;
   }
 
   .page-header__logo-img {
     width: 147px;
     height: 40px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 
   .page-header__title {
@@ -100,16 +121,20 @@
     line-height: 60px;
 
     &--form {
-      padding: 75px 0;
+      padding: 70px 0;
+    }
+
+    &--photo {
+      padding: 67px 0;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    height: 855px;
+    height: 853px;
     width: auto;
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 75% 100%, url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
     background-color: $dark-blue;
 
     &--photo,
@@ -121,23 +146,47 @@
   }
 
   .page-header__wrap {
+    height: 110px;
     flex-direction: row;
-    flex-wrap: wrap;
+    background-color: rgba($black, 0.3);
+  }
+
+  .page-header__title-text {
+    &--photo {
+      padding: 64px 145px;
+    }
+
+    &--form {
+      padding: 60px 0;
+    }
   }
 
   .page-header__menu-wrap {
     display: flex;
-    width: 1200px;
-    padding: 0 130px;
-    background-color: rgba($black, 0.3);
+    width: 940px;
+    margin: 0 auto;
   }
 
   .page-header__content {
-    min-width: 950px;
+    min-width: 940px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat -14% 103%;
   }
 
   .page-header__logo {
     padding: 25px 0 43px;
+  }
+
+  .page-header__logo-img {
+    width: 147px;
+    height: 40px;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 
   .page-header__title {

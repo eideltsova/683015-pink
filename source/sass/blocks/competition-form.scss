@@ -5,7 +5,7 @@
 
 .competition-form__title-text {
   @include indentation-reset;
-  padding: 55px 0 45px;
+  padding: 46px 0 37px;
   line-height: 30px;
   text-align: center;
 
@@ -23,17 +23,17 @@
   .competition-form__title {
     width: 620px;
     padding: 0 60px;
-    margin-bottom: 75px;
+    margin-bottom: 60px;
   }
 
   .competition-form__title-text {
     font-size: 18px;
-    padding-top: 100px;
+    padding-top: 94px;
     padding-bottom: 0;
 
     &--call {
       padding-top: 0;
-      display: block;
+      display: contents;
     }
   }
 }
@@ -42,11 +42,5 @@
   .competition-form__title {
     width: 940px;
     padding: 0 70px;
-  }
-
-  .competition-form__title-text {
-    &--call {
-      display: inline-block;
-    }
   }
 }
