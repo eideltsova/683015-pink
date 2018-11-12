@@ -24,24 +24,26 @@
   align-self: center;
 }
 
-.downloads__item {
+.downloads__link {
+  display: block;
   width: 47px;
   height: 56px;
-}
+  cursor: pointer;
 
-.downloads__item-apple {
-  background: url("../img/logo-apple.svg") no-repeat 100% 100%;
-  background-size: 47px 56px;
-}
+  &--apple {
+    background: url("../img/logo-apple.svg") no-repeat 100% 100%;
+    background-size: 47px 56px;
+  }
 
-.downloads__item-android {
-  background: url("../img/logo-android.svg") no-repeat 100% 100%;
-  background-size: 43px 47px;
-}
+  &--android {
+    background: url("../img/logo-android.svg") no-repeat 100% 100%;
+    background-size: 43px 47px;
+  }
 
-.downloads__item-microsoft {
-  background: url("../img/logo-microsoft.svg") no-repeat 100% 100%;
-  background-size: 44px 41px;
+  &--microsoft {
+    background: url("../img/logo-microsoft.svg") no-repeat 100% 100%;
+    background-size: 44px 41px;
+  }
 }
 
 .downloads__describing {

@@ -96,9 +96,11 @@
       </div>
       <article class="publication publication--panorama">
         <a class="publication__photo publication__photo--panorama" href="#">
-          <img class="publication__photo-img" src="img/panorama-mobile@1x.jpg" alt="Фото Анны">
-          <img class="publication__photo-img publication__photo-img--tablet-panorama" src="img/panorama-tablet@1x.jpg" alt="Фото Анны">
-          <img class="publication__photo-img publication__photo-img--desktop-panorama" src="img/panorama-desktop@1x.jpg" alt="Фото Анны">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+            <img class="publication__photo-img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорамный вид на горы">
+          </picture>
           <span class="publication__photo-category">ПАНОРАМА ДНЯ</span>
         </a>
         <div class="publication__wrap publication__wrap--panorama">
@@ -129,9 +131,11 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img class="publication__photo-img" src="img/photo-car-mobile@1x.jpg" alt="Фото Левона">
-            <img class="publication__photo-img publication__photo-img--tablet" src="img/photo-car-tablet@1x.jpg" alt="Фото Левона">
-            <img class="publication__photo-img publication__photo-img--desktop" src="img/photo-car-desktop@1x.jpg" alt="Фото Левона">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+              <img class="publication__photo-img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Сьемка на камеру автомобиля на парковке">
+            </picture>
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -160,9 +164,11 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img class="publication__photo-img" src="img/photo-drumset-mobile@1x.jpg" alt="Фото Антона">
-            <img class="publication__photo-img publication__photo-img--tablet" src="img/photo-drumset-tablet@1x.jpg" alt="Фото Антона">
-            <img class="publication__photo-img publication__photo-img--desktop" src="img/photo-drumset-desktop@1x.jpg" alt="Фото Антона">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="publication__photo-img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
+            </picture>
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -191,9 +197,11 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img class="publication__photo-img" src="img/photo-window-mobile@1x.jpg" alt="Фото Бориса">
-            <img class="publication__photo-img publication__photo-img--tablet" src="img/photo-window-tablet@1x.jpg" alt="Фото Бориса">
-            <img class="publication__photo-img publication__photo-img--desktop" src="img/photo-window-desktop@1x.jpg" alt="Фото Бориса">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+              <img class="publication__photo-img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Панорамное окно">
+            </picture>
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -222,9 +230,11 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img class="publication__photo-img" src="img/photo-fair-mobile@1x.jpg" alt="Фото Сергея">
-            <img class="publication__photo-img publication__photo-img--tablet" src="img/photo-fair-tablet@1x.jpg" alt="Фото Сергея">
-            <img class="publication__photo-img publication__photo-img--desktop" src="img/photo-fair-desktop@1x.jpg" alt="Фото Сергея">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="publication__photo-img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Продажа кубанкой бахчи">
+            </picture>
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -253,9 +263,11 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img class="publication__photo-img" src="img/photo-pov-mobile@1x.jpg" alt="Фото Максима">
-            <img class="publication__photo-img publication__photo-img--tablet" src="img/photo-pov-tablet@1x.jpg" alt="Фото Максима">
-            <img class="publication__photo-img publication__photo-img--desktop" src="img/photo-pov-desktop@1x.jpg" alt="Фото Максима">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="publication__photo-img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Вид на горы с высоты">
+            </picture>
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
@@ -284,9 +296,11 @@
 
         <article class="publication">
           <a class="publication__photo" href="#">
-            <img class="publication__photo-img" src="img/photo-wing-mobile@1x.jpg" alt="Фото Надежды">
-            <img class="publication__photo-img publication__photo-img--tablet" src="img/photo-wing-tablet@1x.jpg" alt="Фото Надежды">
-            <img class="publication__photo-img publication__photo-img--desktop" src="img/photo-wing-desktop@1x.jpg" alt="Фото Надежды">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="publication__photo-img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Вид из иллюминатора на крыло самолета в небе">
+            </picture>
           </a>
           <div class="publication__wrap">
             <div class="publication__content publication__content--item">
