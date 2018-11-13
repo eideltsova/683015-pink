@@ -21,16 +21,6 @@
 
 .publication__photo-img {
   display: block;
-
-  &--tablet-panorama,
-  &--desktop-panorama {
-    display: none;
-  }
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 .publication__photo-category {
@@ -163,24 +153,12 @@
     height: 300px;
 
     &--panorama {
-      width: auto;
       height: 509px;
-    }
-  }
 
-  .publication__photo-img {
-    display: none;
-
-    &--tablet-panorama {
-      display: block;
-      height: 509px;
-      width: 700px;
-    }
-
-    &--tablet {
-      display: block;
-      height: 300px;
-      width: 300px;
+      .publication__photo-img {
+        width: auto;
+        height: 509px;
+      }
     }
   }
 
@@ -244,27 +222,17 @@
 
     &--panorama {
       height: 506px;
+
+      .publication__photo-img {
+        width: auto;
+        height: 506px;
+      }
     }
   }
 
   .publication__photo-category {
     top: 55px;
     right: 10px;
-  }
-
-  .publication__photo-img {
-    display: none;
-
-    &--desktop-panorama {
-      display: block;
-      height: 506px;
-      width: 1200px;
-    }
-
-    &--desktop {
-      display: block;
-      height: 400px;
-    }
   }
 
   .publication__content {
