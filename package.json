@@ -8,9 +8,11 @@
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",
     "gulp": "4.0.x",
+    "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-sass": "4.0.x",
+    "gulp-webp": "^3.0.0",
     "node-normalize-scss": "^8.0.0",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
