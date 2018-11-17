@@ -9,9 +9,7 @@
 
   &:hover,
   &:focus {
-    .page-footer__logo-img path {
-      fill: $pink;
-    }
+    fill: $pink;
   }
 
   &:active {

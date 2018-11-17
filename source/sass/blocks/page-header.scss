@@ -32,23 +32,25 @@
 .page-header__logo {
   display: block;
   padding: 22px 20px 20px 19px;
+}
 
-  &:hover path,
-  &:focus path {
-    fill: $pink;
-  }
+@media (min-width: 320px) and (max-width: 660px) {
+  .page-header__logo {
+    &:hover,
+    &:focus {
+      .page-header__logo-img {
+        fill: $pink;
+      }
+    }
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
-.page-header__logo-img {
-  &--mobile {
-    width: 75px;
-    height: 22px;
-  }
 
+.page-header__logo-img {
   &--desktop,
   &--tablet {
     display: none;

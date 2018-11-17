@@ -4,6 +4,10 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
+var svgstore = require("gulp-svgstore");
+var rename = require("gulp-rename");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var imagemin = require("gulp-imagemin");
@@ -38,6 +42,23 @@ gulp.task("webp", function () {
   return gulp.src("source/img/**/*.jpg")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("source"));
 });
 
 gulp.task("server", function () {
