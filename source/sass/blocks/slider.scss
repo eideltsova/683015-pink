@@ -66,12 +66,12 @@
     }
 
     &--left {
-      background: url(../img/icon-review-arrow-left.svg) no-repeat center center;
+      background: url("../img/icon-review-arrow-left.svg") no-repeat center center;
       left: 1%;
     }
 
     &--right {
-      background: url(../img/icon-review-arrow-right.svg) no-repeat center center;
+      background: url("../img/icon-review-arrow-right.svg") no-repeat center center;
       right: 1%;
     }
   }
