@@ -16,6 +16,11 @@
   border: none;
   width: 50px;
   height: 30px;
+}
+
+.main-nav__switch-open,
+.main-nav__switch-close {
+  fill: $white;
 
   &:hover,
   &:focus {
@@ -26,6 +31,7 @@
     fill: $pink-opacity;
   }
 }
+
 
 .main-nav__switch-open {
   display: none;

@@ -22,6 +22,12 @@
   &:active::before {
     background-color: rgba($dark-blue, 0.1);
   }
+
+  &--tariffs {
+    &::before {
+      border-color: $light-grey;
+    }
+  }
 }
 
 .slider__radio:checked + .slider__radio-definition {

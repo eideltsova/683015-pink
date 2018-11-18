@@ -1,5 +1,8 @@
 .tariffs {
-  padding: 78px 0 11px;
+  padding: 87px 0 46px;
+  background: url("../img/bg-triangle-white.svg") no-repeat center top;
+  background-size: contain;
+  background-color: $light-grey;
 }
 
 .tariffs__slider {
@@ -11,10 +14,8 @@
 
 @media (min-width: $tablet-width) {
   .tariffs {
-    padding-top: 108px;
+    padding-top: 90px;
     padding-bottom: 20px;
-    background: url("../img/bg-triangle-white.svg") no-repeat center top;
-    background-size: contain;
   }
 
   .tariffs__wrap {

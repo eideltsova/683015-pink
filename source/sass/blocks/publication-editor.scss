@@ -51,6 +51,8 @@
   }
 
   &--checked {
+    fill: $pink;
+
     & + .publication-editor__button--range {
       display: block;
       position: absolute;

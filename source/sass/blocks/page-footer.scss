@@ -6,6 +6,10 @@
   display: block;
   width: 147px;
   height: 40px;
+}
+
+.page-footer__logo-img {
+  fill: $dark-blue;
 
   &:hover,
   &:focus {
@@ -15,11 +19,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.page-footer__logo-img {
-  width: 147px;
-  height: 40px;
 
   &--desktop {
     display: none;

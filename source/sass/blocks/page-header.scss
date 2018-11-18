@@ -34,13 +34,13 @@
   padding: 22px 20px 20px 19px;
 }
 
-@media (min-width: 320px) and (max-width: 660px) {
-  .page-header__logo {
+@media (min-width: 320px) and (max-width: 960px) {
+  .page-header__logo-img {
+    fill: $white;
+
     &:hover,
     &:focus {
-      .page-header__logo-img {
-        fill: $pink;
-      }
+      fill: $pink;
     }
 
     &:active {
@@ -48,7 +48,6 @@
     }
   }
 }
-
 
 .page-header__logo-img {
   &--desktop,
