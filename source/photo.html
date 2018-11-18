@@ -33,7 +33,12 @@
         </a>
         <nav class="main-nav main-nav--close">
           <button class="main-nav__switch" type="button">
-            <img src="img/icon-menu-cross.svg" alt="Close menu">
+            <svg class="main-nav__switch-open" width="50px" height="24px" aria-label="Закрыть меню">
+              <use xlink:href="#icon-menu-burger"></use>
+            </svg>
+            <svg class="main-nav__switch-close" width="24px" height="23px" aria-label="Открыть меню">
+              <use xlink:href="#icon-menu-cross"></use>
+            </svg>
           </button>
           <div class="main-nav__wrap">
             <ul class="main-nav__list">
