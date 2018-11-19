@@ -204,7 +204,7 @@
     }
 
     &--contacts {
-      padding: 12px 58px 0;
+      padding: 12px 58px;
     }
 
     &--emotions {
@@ -212,7 +212,7 @@
     }
 
     &--achievements {
-      padding: 50px 3px 5px 60px;
+      padding: 48px 3px 7px 63px;
     }
   }
 
@@ -242,5 +242,9 @@
 
   .form-field__textarea {
     height: 125px;
+  }
+
+  .form-field__button {
+    margin-bottom: 0;
   }
 }
