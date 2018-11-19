@@ -2255,11 +2255,11 @@ img {
       margin-top: 10px;
       padding: 48px 50px 12px; }
     .form-field--contacts {
-      padding: 12px 58px 0; }
+      padding: 12px 58px; }
     .form-field--emotions {
       padding: 37px 60px 36px; }
     .form-field--achievements {
-      padding: 50px 3px 5px 60px; }
+      padding: 48px 3px 7px 63px; }
   .form-field__list--apps {
     padding-left: 25px; }
   .form-field__list--contacts, .form-field__list--achievements {
@@ -2280,7 +2280,9 @@ img {
   .form-field__title {
     padding: 0; }
   .form-field__textarea {
-    height: 125px; } }
+    height: 125px; }
+  .form-field__button {
+    margin-bottom: 0; } }
 
 .form-text__label {
   color: #d22856;
@@ -2354,7 +2356,7 @@ img {
     margin-bottom: 32px; }
     .form-text--contacts {
       width: 375px;
-      margin-bottom: 17px; }
+      margin-bottom: 0; }
       .form-text--contacts:first-child::after, .form-text--contacts:last-child::after {
         top: 22px; }
   .form-text__input {
@@ -2392,7 +2394,7 @@ img {
     position: absolute;
     left: 9px;
     top: 7px;
-    background: url("../img/icon-yes.svg") no-repeat center center;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='21.698' height='16.09' viewBox='-82.357 4.875 21.698 16.09'%3E%3Cpath fill='%23d22856' d='M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z'/%3E%3C/svg%3E");
     display: none; }
   .form-checkbox__label:hover::before, .form-checkbox__label:focus::before {
     border-color: #283645; }
