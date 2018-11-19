@@ -2147,7 +2147,7 @@ img {
     margin: 18px 0; }
 
 .form-field__title {
-  padding: 0 25px;
+  padding: 0 26px;
   line-height: 18px;
   color: #d22856;
   text-align: center;
@@ -2253,15 +2253,15 @@ img {
     .form-field--apps {
       width: 435px;
       margin-top: 10px;
-      padding: 48px 50px 12px; }
+      padding: 48px 30px 12px; }
     .form-field--contacts {
-      padding: 12px 58px; }
+      padding: 14px 58px; }
     .form-field--emotions {
-      padding: 37px 60px 36px; }
+      padding: 37px 58px; }
     .form-field--achievements {
-      padding: 48px 3px 7px 63px; }
+      padding: 48px 3px 8px 63px; }
   .form-field__list--apps {
-    padding-left: 25px; }
+    padding-left: 46px; }
   .form-field__list--contacts, .form-field__list--achievements {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2277,8 +2277,6 @@ img {
             justify-content: space-between; }
   .form-field__button-notice--add {
     display: inline-block; }
-  .form-field__title {
-    padding: 0; }
   .form-field__textarea {
     height: 125px; }
   .form-field__button {
