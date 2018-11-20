@@ -22,6 +22,12 @@
   &:active::before {
     background-color: rgba($dark-blue, 0.1);
   }
+
+  &--tariffs {
+    &::before {
+      border-color: $light-grey;
+    }
+  }
 }
 
 .slider__radio:checked + .slider__radio-definition {
@@ -46,22 +52,26 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    fill: $dark-blue-opacity;
+    opacity: 0.3;
+    cursor: pointer;
+
 
     &:hover,
     &:focus {
-      fill: rgba($dark-blue, 0.6);
+      opacity: 0.6;
     }
 
     &:active {
-      fill: rgba($dark-blue, 0.1);
+      opacity: 0.1;
     }
 
     &--left {
+      background: url("../img/icon-review-arrow-left.svg") no-repeat center center;
       left: 1%;
     }
 
     &--right {
+      background: url("../img/icon-review-arrow-right.svg") no-repeat center center;
       right: 1%;
     }
   }

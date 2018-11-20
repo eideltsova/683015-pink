@@ -70,6 +70,7 @@
 
   &--function {
     text-align: left;
+    background: transparent;
     transform: translateX(563px);
   }
 }
@@ -92,8 +93,9 @@
     text-align: center;
 
     &--function {
-      transform: none;
       text-align: left;
+      background: $white;
+      transform: none;
     }
   }
 

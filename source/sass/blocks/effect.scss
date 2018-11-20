@@ -17,8 +17,8 @@
     flex-wrap: wrap;
     width: 620px;
     margin: 0 auto;
-    background: url("../img/icon-timer.svg") no-repeat left 65%;
-    background-size: 238px 276px;
+    background: url("../img/icon-editor-diagram-fill.svg") no-repeat 4% 69%, url("../img/icon-timer.svg") no-repeat left 65%;
+    background-size: 202px 202px, 238px 276px;
   }
 
   .effect__description {
@@ -30,14 +30,10 @@
   .effect__time {
     @include indentation-reset;
     display: block;
-    width: 202px;
-    height: 202px;
-    border: 15px solid $pink;
-    margin-left: 19px;
-    margin-top: 65px;
-    align-self: center;
-    padding: 7px 30px 7px 30px;
-    border-radius: 100px;
+    width: 110px;
+    height: 150px;
+    margin-left: 64px;
+    margin-top: 137px;
     font-size: 96px;
     line-height: 149.47px;
     font-weight: 700;
@@ -71,8 +67,8 @@
 
   .effect__wrap {
     width: 940px;
-    background-size: 298px 345px;
-    background-position-y: 30%;
+    background-size: 253px 253px, 298px 345px;
+    background-position: 3% 53%, left 32%;
   }
 
   .effect__description {
@@ -81,12 +77,9 @@
   }
 
   .effect__time {
-    width: 253px;
-    height: 253px;
-    padding: 11px 30px 35px 42px;
-    padding-bottom: 140px;
-    margin-left: 23px;
-    margin-top: 10px;
+    width: 150px;
+    margin-left: 80px;
+    margin-top: 130px;
     font-size: 120px;
     line-height: 186.84px;
     border-radius: 130px;

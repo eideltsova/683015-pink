@@ -60,7 +60,7 @@
 }
 
 .form-field__title {
-  padding: 0 25px;
+  padding: 0 26px;
   line-height: 18px;
   color: $pink;
   text-align: center;
@@ -200,25 +200,25 @@
     &--apps {
       width: 435px;
       margin-top: 10px;
-      padding: 48px 50px 12px;
+      padding: 48px 30px 12px;
     }
 
     &--contacts {
-      padding: 12px 58px 0;
+      padding: 14px 58px;
     }
 
     &--emotions {
-      padding: 37px 60px 36px;
+      padding: 37px 58px;
     }
 
     &--achievements {
-      padding: 50px 3px 5px 60px;
+      padding: 48px 3px 8px 63px;
     }
   }
 
   .form-field__list {
     &--apps {
-      padding-left: 25px;
+      padding-left: 46px;
     }
 
     &--contacts,
@@ -236,11 +236,11 @@
     }
   }
 
-  .form-field__title {
-    padding: 0;
-  }
-
   .form-field__textarea {
     height: 125px;
+  }
+
+  .form-field__button {
+    margin-bottom: 0;
   }
 }

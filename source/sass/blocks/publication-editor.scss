@@ -46,40 +46,27 @@
     fill: rgba($dark-blue, 0.5);
   }
 
+  &:active {
+    fill: $pink;
+  }
+
   &--checked {
+    fill: $pink;
+
     & + .publication-editor__button--range {
       display: block;
       position: absolute;
       width: 240px;
       height: 65px;
     }
-
-    fill: $pink;
   }
 
   &--crop {
     padding-left: 14px;
-
-    .publication-editor__icon {
-      width: 44px;
-      height: 44px;
-    }
-  }
-
-  &--fill {
-    .publication-editor__icon {
-      width: 48px;
-      height: 43px;
-    }
   }
 
   &--contrast {
     padding-right: 15px;
-
-    .publication-editor__icon {
-      width: 32px;
-      height: 32px;
-    }
   }
 }
 
