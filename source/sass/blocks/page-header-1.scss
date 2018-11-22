@@ -152,7 +152,7 @@
     background-size: auto 729px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-       background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
