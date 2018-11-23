@@ -16,47 +16,49 @@
   </div>
 
   <header class="page-header page-header--form">
-    <div class="page-header__menu-wrap">
-      <a class="page-header__logo" href="index.html">
-        <svg class="page-header__logo-img page-header__logo-img--mobile" width="75px" height="22px" role="img">
-          <title>Логотип приложения Пинк</title>
-          <use xlink:href="#logo-pink-white-mobile"></use>
-        </svg>
-        <svg class="page-header__logo-img page-header__logo-img--tablet" width="147px" height="41px" role="img">
-          <title>Логотип приложения Пинк</title>
-          <use xlink:href="#logo-pink-white-tablet"></use>
-        </svg>
-        <svg class="page-header__logo-img page-header__logo-img--desktop" width="147px" height="41px" role="img">
-          <title>Логотип приложения Пинк</title>
-          <use xlink:href="#logo-pink-white-desktop"></use>
-        </svg>
-      </a>
-      <nav class="main-nav main-nav--close">
-        <button class="main-nav__switch" type="button">
-          <svg class="main-nav__switch-open" width="50px" height="24px" aria-label="Закрыть меню">
-            <use xlink:href="#icon-menu-burger"></use>
+    <div class="page-header__menu-wrap page-header__menu-wrap--bg">
+      <div class="page-header__wrap-desktop">
+        <a class="page-header__logo" href="index.html">
+          <svg class="page-header__logo-img page-header__logo-img--mobile" width="75px" height="22px" role="img">
+            <title>Логотип приложения Пинк</title>
+            <use xlink:href="#logo-pink-white-mobile"></use>
           </svg>
-          <svg class="main-nav__switch-close" width="24px" height="23px" aria-label="Открыть меню">
-            <use xlink:href="#icon-menu-cross"></use>
+          <svg class="page-header__logo-img page-header__logo-img--tablet" width="147px" height="41px" role="img">
+            <title>Логотип приложения Пинк</title>
+            <use xlink:href="#logo-pink-white-tablet"></use>
           </svg>
-        </button>
-        <div class="main-nav__wrap">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link  main-nav__link--active">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <svg class="page-header__logo-img page-header__logo-img--desktop" width="147px" height="41px" role="img">
+            <title>Логотип приложения Пинк</title>
+            <use xlink:href="#logo-pink-white-desktop"></use>
+          </svg>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__switch" type="button">
+            <svg class="main-nav__switch-open" width="50px" height="24px" aria-label="Закрыть меню">
+              <use xlink:href="#icon-menu-burger"></use>
+            </svg>
+            <svg class="main-nav__switch-close" width="24px" height="23px" aria-label="Открыть меню">
+              <use xlink:href="#icon-menu-cross"></use>
+            </svg>
+          </button>
+          <div class="main-nav__wrap">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  main-nav__link--active">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
     <div class="page-header__title">
       <h1 class="page-header__title-text page-header__title-text--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -215,23 +217,8 @@
       <button class="popup__button square-button popup__button--correctly" type="button">Закрыть окно</button>
     </div>
   </div>
-  <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__switch');
 
-      navMain.classList.remove('main-nav--nojs');
+  <script src="js/script.js"></script>
 
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-    });
-  </script>
-
-
-</body>
+  </body>
 </html>
