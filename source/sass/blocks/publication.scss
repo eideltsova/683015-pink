@@ -5,6 +5,8 @@
 
   &--panorama {
     position: relative;
+    width: 320px;
+    margin: 0 auto;
   }
 }
 
@@ -115,7 +117,7 @@
     min-height: 455px;
 
     &--panorama {
-      width: 100%;
+      width: 660px;
       margin-bottom: 50px;
     }
   }
@@ -199,6 +201,10 @@
   .publication {
     min-height: 555px;
     margin-bottom: 52px;
+
+    &--panorama {
+      width: 960px;
+    }
   }
 
   .publication__wrap {
