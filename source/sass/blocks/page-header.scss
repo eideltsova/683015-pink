@@ -78,7 +78,7 @@
 
 .page-header__title {
   width: auto;
-  min-height: 238px;
+  min-height: 242px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 0;
   background-color: $dark-blue;
   background-size: auto 462px;
@@ -92,7 +92,7 @@
   display: block;
   width: 280px;
   margin: 0 auto;
-  padding: 97px 0 80px;
+  padding: 100px 0 80px;
   color: $white;
   text-align: center;
   font-size: 24px;
@@ -163,7 +163,7 @@
   }
 
   .page-header__title {
-    min-height: 439px;
+    min-height: 437px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat center 0;
     background-color: $dark-blue;
     background-size: auto 729px;
@@ -180,7 +180,7 @@
     line-height: 60px;
 
     &--form {
-      padding-top: 180px;
+      padding-top: 176px;
       padding-bottom: 50px;
     }
 
