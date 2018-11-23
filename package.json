@@ -15,6 +15,7 @@
     "gulp-posthtml": "^3.0.4",
     "gulp-sass": "4.0.x",
     "gulp-svgstore": "^7.0.0",
+    "gulp-uglify": "^3.0.1",
     "gulp-webp": "^3.0.0",
     "node-normalize-scss": "^8.0.0",
     "posthtml-include": "^1.2.0",
@@ -25,7 +26,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp css",
+    "build": "gulp build",
     "start": "gulp start"
   },
   "browserslist": [

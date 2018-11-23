@@ -14,6 +14,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var csso = require("gulp-csso");
 var del = require("del");
+var uglify = require("gulp-uglify");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -21,16 +22,16 @@ gulp.task("css", function () {
     .pipe(sass({
       // includePaths: require('node-normalize-scss').with('other/path', 'another/path')
       // - or -
-      includePaths: require('node-normalize-scss').includePaths
+      includePaths: require("node-normalize-scss").includePaths
     }))
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))/*build*/
-    .pipe(server.stream());
-    /*.pipe(csso())
+    .pipe(gulp.dest("build/css"))
+    .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));*/
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("images", function () {
@@ -55,20 +56,17 @@ gulp.task("sprite", function () {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(gulp.dest("source"));/*build*/
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",/*build*/
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -76,7 +74,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html").on("change", gulp.series("html", server.reload));
 });
 
 gulp.task("refresh", function (done) {
@@ -99,10 +97,19 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("start", gulp.series("css",/*build*/ "server"));
-/*gulp.task("build", gulp.series(
-"clean",
-"copy",
-"css",
-"html"
-));*/
+gulp.task("js", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
+});
+
+gulp.task("build", gulp.series(
+  "clean",
+  "copy",
+  "css",
+  "js",
+  "html"
+));
+
+gulp.task("start", gulp.series("build", "server"));
+
