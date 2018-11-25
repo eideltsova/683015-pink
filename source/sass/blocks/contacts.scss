@@ -9,12 +9,9 @@
 }
 
 .contacts__wrap {
-  position: absolute;
-  top: 0;
-  z-index: 2;
   width: 100%;
-  min-height: 395px;
-  padding-top: 42px;
+  min-height: 216px;
+  padding-top: 44px;
   background-color: $white;
 }
 
@@ -38,16 +35,6 @@
   flex-wrap: wrap;
   width: 280px;
   margin: 0 auto;
-}
-
-.contacts__list-shape {
-  width: 100%;
-  height: 123px;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  background: url("../img/bg-triangle-white-footer.svg") no-repeat center center;
-  background-size: 1200px 123px;
 }
 
 .contacts__item {
@@ -81,17 +68,28 @@
 }
 
 .contacts__map {
-  display: block;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
-  overflow: hidden;
+  min-height: 250px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: -9px;
+    left: 0;
+
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat center center;
+    background-size: cover;
+  }
+
 }
 
 .contacts__map-online {
   border: 0;
   width: 100%;
-  height: 250px;
+  height: 257px;
   background-color: transparent;
 }
 
@@ -103,9 +101,8 @@
   }
 
   .contacts__wrap {
-    position: initial;
     min-height: 335px;
-    width: 660px;
+    min-width: 660px;
     margin: 0 auto;
     padding: 0;
   }
@@ -128,12 +125,6 @@
     justify-content: space-around;
   }
 
-  .contacts__list-shape {
-    width: 100%;
-    top: 45%;
-  }
-
-
   .contacts__item {
     width: 300px;
     margin-bottom: 45px;
@@ -145,8 +136,9 @@
   }
 
   .contacts__map {
-    position: inherit;
-    min-width: 660px;
+    &::before {
+      height: 99px;
+    }
   }
 
   .contacts__map-online {
@@ -183,10 +175,6 @@
     width: 960px;
   }
 
-  .contacts__list-shape {
-    top: 40%;
-  }
-
   .contacts__item {
     width: 320px;
     margin-bottom: 0;
@@ -199,6 +187,11 @@
 
   .contacts__map {
     min-width: 960px;
+
+    &::before {
+      top: 0;
+      height: 123px;
+    }
   }
 
   .contacts__item--mail {
@@ -206,6 +199,6 @@
   }
 
   .contacts__map-online {
-    height: 500px;
+    height: 515px;
   }
 }
