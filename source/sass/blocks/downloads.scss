@@ -1,6 +1,7 @@
 .downloads {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 280px;
   margin: 0 auto;
@@ -16,6 +17,7 @@
 .downloads__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
   margin-top: 16px;

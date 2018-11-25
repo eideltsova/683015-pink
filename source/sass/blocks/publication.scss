@@ -1,5 +1,6 @@
 .publication {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 20px;
 
@@ -47,6 +48,7 @@
 
 .publication__content {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;

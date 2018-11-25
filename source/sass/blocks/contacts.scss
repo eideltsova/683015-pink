@@ -1,6 +1,7 @@
 .contacts {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   min-height: 645px;
   width: auto;
@@ -159,7 +160,7 @@
 
   .contacts__wrap {
     width: 960px;
-    min-height: 287px;
+    min-height: 288px;
     top: 63px;
   }
 
@@ -189,7 +190,7 @@
     min-width: 960px;
 
     &::before {
-      top: 0;
+      top: -1px;
       height: 123px;
     }
   }

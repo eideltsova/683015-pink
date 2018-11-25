@@ -1,6 +1,7 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   position: relative;
   color: $white;
   width: 100%;
@@ -123,6 +124,7 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
