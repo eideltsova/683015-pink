@@ -11,6 +11,7 @@
   width: 100%;
   margin-top: 10px;
   border: 2px solid $grey;
+  outline: none;
 
   &:-ms-input-placeholder {
     color: $dark-blue;
@@ -24,7 +25,8 @@
     color: $dark-blue;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $dark-blue;
   }
 
@@ -43,6 +45,7 @@
     &--contacts {
       position: relative;
       flex-direction: column-reverse;
+      align-items: flex-start;
       margin-bottom: 20px;
 
       &:first-child {

@@ -35,6 +35,10 @@
     width: 150px;
     padding-left: 20px;
     justify-content: space-between;
+
+    &--form {
+      padding-top: 8px;
+    }
   }
 }
 
@@ -42,7 +46,6 @@
   .copyright {
     width: 153px;
     padding: 0;
-    margin-bottom: 35px;
   }
 
   .copyright__developed {

@@ -140,7 +140,7 @@
   }
 
   .page-header__content-image {
-    width: 700px;
+    width: auto;
     height: 545px;
     margin-top: 73px;
     object-fit: cover;
@@ -240,10 +240,11 @@
   }
 
   .page-header__content-image {
-    width: 1050px;
+    width: auto;
+    display: block;
     height: 645px;
     margin-top: 98px;
-    padding-left: 142px;
+    padding-left: 136px;
   }
 
 
