@@ -66,8 +66,8 @@
 }
 
 .form-radio__input:checked:focus + .form-radio__label,
-.form-radio__input:checked:hover + .form-radio__label{
-  &::before{
+.form-radio__input:checked:hover + .form-radio__label {
+  &::before {
     border-color: $dark-blue;
   }
 }
