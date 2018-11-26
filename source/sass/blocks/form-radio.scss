@@ -46,7 +46,7 @@
 }
 
 .form-radio__input:active ~ .form-radio__label {
-   &::before {
+  &::before {
     border-color: $pink;
   }
 }
@@ -80,7 +80,7 @@
 }
 
 .form-radio__input:checked + .form-radio__label:active {
-   &::after {
+  &::after {
     display: none;
   }
 
