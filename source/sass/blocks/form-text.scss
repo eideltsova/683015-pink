@@ -51,10 +51,10 @@
       &:first-child {
         &::after {
           content: "";
-          width: 61px;
-          height: 61px;
-          top: 10px;
-          right: 0;
+          width: 60px;
+          height: 58px;
+          top: 13px;
+          right: 2px;
           position: absolute;
           background: url("../img/icon-phone.svg") no-repeat center center;
           background-color: $grey;
@@ -64,10 +64,10 @@
       &:last-child {
         &::after {
           content: "";
-          width: 61px;
-          height: 61px;
-          top: 10px;
-          right: 0;
+          width: 60px;
+          height: 58px;
+          top: 13px;
+          right: 2px;
           position: absolute;
           background: url("../img/icon-mail.svg") no-repeat center center;
           background-color: $grey;
@@ -98,7 +98,7 @@
       &:first-child,
       &:last-child {
         &::after {
-          top: 22px;
+          top: 24px;
         }
       }
     }

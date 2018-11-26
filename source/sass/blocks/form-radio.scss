@@ -65,15 +65,14 @@
   }
 }
 
-.form-radio__input:checked + .form-radio__label:hover,
-.form-radio__input:checked + .form-radio__label:focus {
-  &::before,
-  &::before {
+.form-radio__input:checked:focus + .form-radio__label,
+.form-radio__input:checked:hover + .form-radio__label{
+  &::before{
     border-color: $dark-blue;
   }
 }
 
-.form-radio__input:checked + .form-radio__label:active {
+.form-radio__input:checked:active + .form-radio__label {
   &::after {
     display: none;
   }

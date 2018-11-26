@@ -80,7 +80,9 @@
     height: 60px;
     top: -9px;
     left: 0;
-    background: url("../img/bg-triangle-white-footer.svg") no-repeat center center;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='595.28' height='61.905' viewBox='0 0 595.3 61.9' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M297.64 61.905L0 0h595.28z'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
   }
 }
@@ -128,6 +130,10 @@
     width: 300px;
     margin-bottom: 45px;
     padding: 0 35px;
+
+    &--phone {
+      padding-left: 25px;
+    }
 
     &--address {
       margin-bottom: 0;
@@ -188,8 +194,8 @@
     min-width: 960px;
 
     &::before {
-      top: -1px;
-      height: 123px;
+      top: -10px;
+      height: 135px;
     }
   }
 
