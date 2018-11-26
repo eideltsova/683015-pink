@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Пинк — Конкурс</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.js"></script>
 </head>
 <body>
@@ -154,7 +157,6 @@
             <p class="form-field__title form-field__title--emotions">Опишите свои эмоции</p>
             <textarea class="form-field__textarea" name="description-emotions" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-
           <div class="form-field form-field--wrap">
             <button class="form-field__button square-button" type="submit">Отправить форму</button>
             <p class="form-field__button-notice"><span class="form-field__button-symbol"> * </span>— Обязательные<span class="form-field__button-notice form-field__button-notice--add">&nbsp;для заполнения</span> поля</p>

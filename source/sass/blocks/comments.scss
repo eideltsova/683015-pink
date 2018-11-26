@@ -15,6 +15,7 @@
 
 .comments__slider {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 auto;
   width: 80px;
@@ -23,6 +24,7 @@
 .comments__item {
   @include indentation-reset;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   &:nth-child(2n),
@@ -77,6 +79,7 @@
 
   .comments__title-wrap {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
   }
 
@@ -98,7 +101,7 @@
       height: 64px;
       position: absolute;
       top: 11%;
-      left: 47%;
+      left: 46%;
       background: url("../img/icon-quotes.svg") no-repeat center center;
     }
   }

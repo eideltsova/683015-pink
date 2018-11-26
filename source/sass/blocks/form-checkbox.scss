@@ -1,5 +1,6 @@
 .form-checkbox {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 42px;
 }
@@ -10,6 +11,7 @@
   min-height: 40px;
   font-size: 18px;
   line-height: 30px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -33,17 +35,21 @@
     background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='21.698' height='16.09' viewBox='-82.357 4.875 21.698 16.09'%3E%3Cpath fill='%23d22856' d='M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z'/%3E%3C/svg%3E");
     display: none;
   }
+}
 
-  &:hover::before,
-  &:focus::before {
+.form-checkbox__input:focus ~ .form-checkbox__label,
+.form-checkbox__input:hover ~ .form-checkbox__label {
+  &::before {
     border-color: $dark-blue;
   }
+}
 
-  &:active::before {
+.form-checkbox__input:active ~ .form-checkbox__label {
+  &::before {
     border-color: $pink;
   }
 
-  &:active::after {
+  &::after {
     display: block;
   }
 }
@@ -61,6 +67,10 @@
 
   &:active::after {
     display: none;
+  }
+
+  &:active::before {
+    border-color: $pink;
   }
 }
 

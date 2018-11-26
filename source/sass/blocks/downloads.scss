@@ -1,11 +1,12 @@
 .downloads {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 280px;
   margin: 0 auto;
   padding: 29px 0 14px;
-  min-height: 268px;
+  min-height: 270px;
   background-color: $dark-blue;
 }
 
@@ -16,6 +17,7 @@
 .downloads__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
   margin-top: 16px;
@@ -56,6 +58,8 @@
 @media (min-width: $tablet-width) {
   .downloads {
     position: absolute;
+    left: 0;
+    top: 108px;
     width: 300px;
     padding: 90px 0;
     margin: 0;

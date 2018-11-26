@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.js"></script>
   </head>
   <body>
@@ -63,10 +66,10 @@
       <div class="page-header__content">
         <div class="page-header__content-wrap">
           <picture>
-            <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1050px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 1050px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
             <img class="page-header__content-image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Айфон в руке с отредактированым фото в Pink">
           </picture>
@@ -138,8 +141,9 @@
               <div class="comments__title-wrap">
                 <cite class="comments__title">Николай Петров</cite>
                 <span class="comments__title-clarification">25 лет, водитель трамвая</span>
+              </div>
               <p class="comments__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </div></blockquote>
+            </blockquote>
             <blockquote class="comments__item">
               <div class="comments__title-wrap">
                 <cite class="comments__title">Николай Петров</cite>
@@ -300,8 +304,6 @@
               <a class="contacts__item-info">ул. Большая Конюшенная, 19/8</a>
             </div>
           </div>
-        </div>
-        <div class="contacts__list-shape">
         </div>
         <div class="contacts__map">
           <iframe class="contacts__map-online" src="https://yandex.ua/map-widget/v1/?um=constructor%3A0404e1b14bb1cb9c75ea89e922325c40f782b1414a0b6f36a2e3de2e0213a599&amp;source=constructor"></iframe>

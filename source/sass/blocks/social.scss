@@ -2,6 +2,7 @@
   width: 178px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 36px;
 }
 
 .social__link {
@@ -44,5 +45,19 @@
       border: 3px solid rgba(40, 54, 69, 0.4);
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: 190px;
+    padding-top: 5px;
+    padding-left: 10px;
   }
 }

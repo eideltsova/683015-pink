@@ -6,6 +6,8 @@
   display: block;
   width: 147px;
   height: 40px;
+  margin-top: -5px;
+  margin-bottom: 40px;
 }
 
 .page-footer__logo-img {
@@ -28,12 +30,13 @@
 .page-footer__wrap {
   width: 280px;
   margin: 0 auto;
-  padding: 40px 0 43px;
+  padding: 47px 0 41px;
   min-height: 284px;
+  height: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 
   &--index {
     display: none;
@@ -54,15 +57,28 @@
       display: flex;
     }
   }
+
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrap {
     width: 940px;
     min-height: 197px;
-    padding-top: 65px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &--index {
+      padding-top: 63px;
+    }
   }
+
+  .page-footer__logo {
+    margin-top: 0;
+  }
+
 
   .page-footer__logo-img {
     width: 147px;
