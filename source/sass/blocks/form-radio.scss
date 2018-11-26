@@ -49,12 +49,6 @@
   &::before {
     border-color: $pink;
   }
-}
-
-.form-radio__input:active ~ .form-radio__label {
-  &::before {
-    border-color: $pink;
-  }
 
   &::after {
     display: block;

@@ -86,16 +86,6 @@
     outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
   }
 
-  &::-ms-track {
-    width: 100%;
-    cursor: pointer;
-
-    /* Hides the slider so custom styles can be added */
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-  }
-
   &::-webkit-slider-thumb {
     appearance: none; /*-webkit не пропускает линтер*/
     /*-webkit-appearance: none;*/
@@ -139,10 +129,6 @@
     background-color: transparent;
     border-color: transparent;
     color: transparent;
-  }
-
-  &::ms-fill-lower {
-    background-color: $dark-blue;
   }
 
   &::-ms-fill-upper {
